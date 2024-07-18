@@ -1,0 +1,17 @@
+{
+	"name": "moonlight",
+	"version": "1.0.0",
+	"description": "",
+	"main": "app.js",
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1"
+	},
+	"author": "",
+	"dependencies": {
+		"@vant/weapp": "^1.11.6",
+		"puppeteer": "^22.10.0",
+		"puppeteer-chromium-resolver": "^22.0.0"
+	},
+	"license": "ISC",
+	"keywords": []
+}

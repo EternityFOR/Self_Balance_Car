@@ -1,0 +1,883 @@
+开始转换……
+小程序路径:  D:/6.Programming/1.Project_softwares/ELEC3300_Project_Code/ELEC3300_Project_Wechatmini
+搜索到1729个文件(含目录)，耗时：30ms
+
+开始分析文件
+分析文件信息完成，共383组数据
+开始转换文件组为vue文件
+转换进度: 1 / 766   fileKey：app
+转换进度: 2 / 766   fileKey：crypto/aes
+转换进度: 3 / 766   fileKey：crypto/crypto-dh
+转换进度: 4 / 766   fileKey：crypto/lib/base64-js
+转换进度: 5 / 766   fileKey：crypto/lib/bn
+转换进度: 6 / 766   fileKey：crypto/lib/brorand
+转换进度: 7 / 766   fileKey：crypto/lib/buffer
+转换进度: 8 / 766   fileKey：crypto/lib/dh
+转换进度: 9 / 766   fileKey：crypto/lib/generatePrime
+转换进度: 10 / 766   fileKey：crypto/lib/ieee754
+转换进度: 11 / 766   fileKey：crypto/lib/miller-rabin
+转换进度: 12 / 766   fileKey：crypto/lib/randombytes
+转换进度: 13 / 766   fileKey：crypto/lib/safe-buffer
+转换进度: 14 / 766   fileKey：crypto/md5.min
+转换进度: 15 / 766   fileKey：custom-tab-bar/index
+转换进度: 16 / 766   fileKey：fonts/font
+转换进度: 17 / 766   fileKey：miniprogram_npm/@vant/weapp/action-sheet/index
+转换进度: 18 / 766   fileKey：miniprogram_npm/@vant/weapp/area/index
+转换进度: 19 / 766   fileKey：miniprogram_npm/@vant/weapp/button/index
+转换进度: 20 / 766   fileKey：miniprogram_npm/@vant/weapp/calendar/calendar
+转换进度: 21 / 766   fileKey：miniprogram_npm/@vant/weapp/calendar/components/header/index
+转换进度: 22 / 766   fileKey：miniprogram_npm/@vant/weapp/calendar/components/month/index
+转换进度: 23 / 766   fileKey：miniprogram_npm/@vant/weapp/calendar/index
+[ERROR]prop minDate 的默认值 undefined 与类型 Number 不一致。    fileKey: miniprogram_npm/@vant/weapp/calendar/index
+[ERROR]prop maxDate 的默认值 undefined 与类型 Number 不一致。    fileKey: miniprogram_npm/@vant/weapp/calendar/index
+转换进度: 24 / 766   fileKey：miniprogram_npm/@vant/weapp/calendar/utils
+转换进度: 25 / 766   fileKey：miniprogram_npm/@vant/weapp/card/index
+转换进度: 26 / 766   fileKey：miniprogram_npm/@vant/weapp/cascader/index
+转换进度: 27 / 766   fileKey：miniprogram_npm/@vant/weapp/cell/index
+转换进度: 28 / 766   fileKey：miniprogram_npm/@vant/weapp/cell-group/index
+转换进度: 29 / 766   fileKey：miniprogram_npm/@vant/weapp/checkbox/index
+转换进度: 30 / 766   fileKey：miniprogram_npm/@vant/weapp/checkbox-group/index
+转换进度: 31 / 766   fileKey：miniprogram_npm/@vant/weapp/circle/canvas
+转换进度: 32 / 766   fileKey：miniprogram_npm/@vant/weapp/circle/index
+转换进度: 33 / 766   fileKey：miniprogram_npm/@vant/weapp/col/index
+转换进度: 34 / 766   fileKey：miniprogram_npm/@vant/weapp/collapse/index
+转换进度: 35 / 766   fileKey：miniprogram_npm/@vant/weapp/collapse-item/animate
+转换进度: 36 / 766   fileKey：miniprogram_npm/@vant/weapp/collapse-item/index
+转换进度: 37 / 766   fileKey：miniprogram_npm/@vant/weapp/common/color
+转换进度: 38 / 766   fileKey：miniprogram_npm/@vant/weapp/common/component
+
+[Tip]这个页面的结构非标准结构，工具已尝试自动修复，如仍有问题，请先调整为标准结构后(如：Page({}))，再转换。 file:miniprogram_npm/@vant/weapp/common/component
+转换进度: 39 / 766   fileKey：miniprogram_npm/@vant/weapp/common/index
+转换进度: 40 / 766   fileKey：miniprogram_npm/@vant/weapp/common/relation
+转换进度: 41 / 766   fileKey：miniprogram_npm/@vant/weapp/common/style/clearfix
+转换进度: 42 / 766   fileKey：miniprogram_npm/@vant/weapp/common/style/ellipsis
+转换进度: 43 / 766   fileKey：miniprogram_npm/@vant/weapp/common/style/hairline
+转换进度: 44 / 766   fileKey：miniprogram_npm/@vant/weapp/common/style/mixins/clearfix
+转换进度: 45 / 766   fileKey：miniprogram_npm/@vant/weapp/common/style/mixins/ellipsis
+转换进度: 46 / 766   fileKey：miniprogram_npm/@vant/weapp/common/style/mixins/hairline
+转换进度: 47 / 766   fileKey：miniprogram_npm/@vant/weapp/common/style/var
+转换进度: 48 / 766   fileKey：miniprogram_npm/@vant/weapp/common/utils
+转换进度: 49 / 766   fileKey：miniprogram_npm/@vant/weapp/common/validator
+转换进度: 50 / 766   fileKey：miniprogram_npm/@vant/weapp/common/version
+转换进度: 51 / 766   fileKey：miniprogram_npm/@vant/weapp/config-provider/index
+转换进度: 52 / 766   fileKey：miniprogram_npm/@vant/weapp/count-down/index
+转换进度: 53 / 766   fileKey：miniprogram_npm/@vant/weapp/count-down/utils
+转换进度: 54 / 766   fileKey：miniprogram_npm/@vant/weapp/datetime-picker/index
+转换进度: 55 / 766   fileKey：miniprogram_npm/@vant/weapp/definitions/index
+转换进度: 56 / 766   fileKey：miniprogram_npm/@vant/weapp/dialog/dialog
+转换进度: 57 / 766   fileKey：miniprogram_npm/@vant/weapp/dialog/index
+转换进度: 58 / 766   fileKey：miniprogram_npm/@vant/weapp/divider/index
+转换进度: 59 / 766   fileKey：miniprogram_npm/@vant/weapp/dropdown-item/index
+转换进度: 60 / 766   fileKey：miniprogram_npm/@vant/weapp/dropdown-item/shared
+转换进度: 61 / 766   fileKey：miniprogram_npm/@vant/weapp/dropdown-menu/index
+转换进度: 62 / 766   fileKey：miniprogram_npm/@vant/weapp/empty/index
+转换进度: 63 / 766   fileKey：miniprogram_npm/@vant/weapp/field/index
+转换进度: 64 / 766   fileKey：miniprogram_npm/@vant/weapp/field/input
+转换进度: 65 / 766   fileKey：miniprogram_npm/@vant/weapp/field/props
+转换进度: 66 / 766   fileKey：miniprogram_npm/@vant/weapp/field/textarea
+转换进度: 67 / 766   fileKey：miniprogram_npm/@vant/weapp/field/types
+转换进度: 68 / 766   fileKey：miniprogram_npm/@vant/weapp/goods-action/index
+转换进度: 69 / 766   fileKey：miniprogram_npm/@vant/weapp/goods-action-button/index
+转换进度: 70 / 766   fileKey：miniprogram_npm/@vant/weapp/goods-action-icon/index
+转换进度: 71 / 766   fileKey：miniprogram_npm/@vant/weapp/grid/index
+转换进度: 72 / 766   fileKey：miniprogram_npm/@vant/weapp/grid-item/index
+转换进度: 73 / 766   fileKey：miniprogram_npm/@vant/weapp/icon/index
+
+[Tip]这里引用的全是网络字体，可能在app上面有兼容问题（如字体图标显示不出来，运行后没问题就不用管）  fileKey: miniprogram_npm/@vant/weapp/icon/index
+转换进度: 74 / 766   fileKey：miniprogram_npm/@vant/weapp/image/index
+转换进度: 75 / 766   fileKey：miniprogram_npm/@vant/weapp/index-anchor/index
+转换进度: 76 / 766   fileKey：miniprogram_npm/@vant/weapp/index-bar/index
+转换进度: 77 / 766   fileKey：miniprogram_npm/@vant/weapp/info/index
+转换进度: 78 / 766   fileKey：miniprogram_npm/@vant/weapp/loading/index
+转换进度: 79 / 766   fileKey：miniprogram_npm/@vant/weapp/mixins/basic
+转换进度: 80 / 766   fileKey：miniprogram_npm/@vant/weapp/mixins/button
+转换进度: 81 / 766   fileKey：miniprogram_npm/@vant/weapp/mixins/link
+转换进度: 82 / 766   fileKey：miniprogram_npm/@vant/weapp/mixins/page-scroll
+转换进度: 83 / 766   fileKey：miniprogram_npm/@vant/weapp/mixins/touch
+转换进度: 84 / 766   fileKey：miniprogram_npm/@vant/weapp/mixins/transition
+转换进度: 85 / 766   fileKey：miniprogram_npm/@vant/weapp/nav-bar/index
+转换进度: 86 / 766   fileKey：miniprogram_npm/@vant/weapp/notice-bar/index
+转换进度: 87 / 766   fileKey：miniprogram_npm/@vant/weapp/notify/index
+转换进度: 88 / 766   fileKey：miniprogram_npm/@vant/weapp/notify/notify
+转换进度: 89 / 766   fileKey：miniprogram_npm/@vant/weapp/overlay/index
+转换进度: 90 / 766   fileKey：miniprogram_npm/@vant/weapp/panel/index
+转换进度: 91 / 766   fileKey：miniprogram_npm/@vant/weapp/picker/index
+转换进度: 92 / 766   fileKey：miniprogram_npm/@vant/weapp/picker/shared
+转换进度: 93 / 766   fileKey：miniprogram_npm/@vant/weapp/picker/toolbar
+转换进度: 94 / 766   fileKey：miniprogram_npm/@vant/weapp/picker-column/index
+转换进度: 95 / 766   fileKey：miniprogram_npm/@vant/weapp/popup/index
+转换进度: 96 / 766   fileKey：miniprogram_npm/@vant/weapp/progress/index
+转换进度: 97 / 766   fileKey：miniprogram_npm/@vant/weapp/radio/index
+转换进度: 98 / 766   fileKey：miniprogram_npm/@vant/weapp/radio-group/index
+转换进度: 99 / 766   fileKey：miniprogram_npm/@vant/weapp/rate/index
+转换进度: 100 / 766   fileKey：miniprogram_npm/@vant/weapp/row/index
+转换进度: 101 / 766   fileKey：miniprogram_npm/@vant/weapp/search/index
+[ERROR]prop maxlength 的默认值 undefined 与类型 Number 不一致。    fileKey: miniprogram_npm/@vant/weapp/search/index
+转换进度: 102 / 766   fileKey：miniprogram_npm/@vant/weapp/share-sheet/index
+转换进度: 103 / 766   fileKey：miniprogram_npm/@vant/weapp/share-sheet/options
+转换进度: 104 / 766   fileKey：miniprogram_npm/@vant/weapp/sidebar/index
+转换进度: 105 / 766   fileKey：miniprogram_npm/@vant/weapp/sidebar-item/index
+转换进度: 106 / 766   fileKey：miniprogram_npm/@vant/weapp/skeleton/index
+转换进度: 107 / 766   fileKey：miniprogram_npm/@vant/weapp/slider/index
+转换进度: 108 / 766   fileKey：miniprogram_npm/@vant/weapp/stepper/index
+[ERROR]prop decimalLength 的默认值 null 与类型 Number 不一致。    fileKey: miniprogram_npm/@vant/weapp/stepper/index
+转换进度: 109 / 766   fileKey：miniprogram_npm/@vant/weapp/steps/index
+转换进度: 110 / 766   fileKey：miniprogram_npm/@vant/weapp/sticky/index
+转换进度: 111 / 766   fileKey：miniprogram_npm/@vant/weapp/submit-bar/index
+转换进度: 112 / 766   fileKey：miniprogram_npm/@vant/weapp/swipe-cell/index
+转换进度: 113 / 766   fileKey：miniprogram_npm/@vant/weapp/switch/index
+转换进度: 114 / 766   fileKey：miniprogram_npm/@vant/weapp/tab/index
+转换进度: 115 / 766   fileKey：miniprogram_npm/@vant/weapp/tabbar/index
+转换进度: 116 / 766   fileKey：miniprogram_npm/@vant/weapp/tabbar-item/index
+转换进度: 117 / 766   fileKey：miniprogram_npm/@vant/weapp/tabs/index
+转换进度: 118 / 766   fileKey：miniprogram_npm/@vant/weapp/tag/index
+转换进度: 119 / 766   fileKey：miniprogram_npm/@vant/weapp/toast/index
+转换进度: 120 / 766   fileKey：miniprogram_npm/@vant/weapp/toast/toast
+转换进度: 121 / 766   fileKey：miniprogram_npm/@vant/weapp/transition/index
+转换进度: 122 / 766   fileKey：miniprogram_npm/@vant/weapp/tree-select/index
+[ERROR]prop max 的默认值 undefined 与类型 Number 不一致。    fileKey: miniprogram_npm/@vant/weapp/tree-select/index
+转换进度: 123 / 766   fileKey：miniprogram_npm/@vant/weapp/uploader/index
+转换进度: 124 / 766   fileKey：miniprogram_npm/@vant/weapp/uploader/shared
+转换进度: 125 / 766   fileKey：miniprogram_npm/@vant/weapp/uploader/utils
+转换进度: 126 / 766   fileKey：miniprogram_npm/@vant/weapp/wxs/add-unit
+转换进度: 127 / 766   fileKey：miniprogram_npm/@vant/weapp/wxs/array
+转换进度: 128 / 766   fileKey：miniprogram_npm/@vant/weapp/wxs/bem
+转换进度: 129 / 766   fileKey：miniprogram_npm/@vant/weapp/wxs/memoize
+转换进度: 130 / 766   fileKey：miniprogram_npm/@vant/weapp/wxs/object
+转换进度: 131 / 766   fileKey：miniprogram_npm/@vant/weapp/wxs/style
+转换进度: 132 / 766   fileKey：miniprogram_npm/@vant/weapp/wxs/utils
+转换进度: 133 / 766   fileKey：node_modules/@vant/weapp/dist/action-sheet/index
+转换进度: 134 / 766   fileKey：node_modules/@vant/weapp/dist/area/index
+转换进度: 135 / 766   fileKey：node_modules/@vant/weapp/dist/button/index
+转换进度: 136 / 766   fileKey：node_modules/@vant/weapp/dist/calendar/calendar
+转换进度: 137 / 766   fileKey：node_modules/@vant/weapp/dist/calendar/components/header/index
+转换进度: 138 / 766   fileKey：node_modules/@vant/weapp/dist/calendar/components/month/index
+转换进度: 139 / 766   fileKey：node_modules/@vant/weapp/dist/calendar/index
+[ERROR]prop minDate 的默认值 undefined 与类型 Number 不一致。    fileKey: node_modules/@vant/weapp/dist/calendar/index
+[ERROR]prop maxDate 的默认值 undefined 与类型 Number 不一致。    fileKey: node_modules/@vant/weapp/dist/calendar/index
+转换进度: 140 / 766   fileKey：node_modules/@vant/weapp/dist/calendar/utils
+转换进度: 141 / 766   fileKey：node_modules/@vant/weapp/dist/card/index
+转换进度: 142 / 766   fileKey：node_modules/@vant/weapp/dist/cascader/index
+转换进度: 143 / 766   fileKey：node_modules/@vant/weapp/dist/cell/index
+转换进度: 144 / 766   fileKey：node_modules/@vant/weapp/dist/cell-group/index
+转换进度: 145 / 766   fileKey：node_modules/@vant/weapp/dist/checkbox/index
+转换进度: 146 / 766   fileKey：node_modules/@vant/weapp/dist/checkbox-group/index
+转换进度: 147 / 766   fileKey：node_modules/@vant/weapp/dist/circle/canvas
+转换进度: 148 / 766   fileKey：node_modules/@vant/weapp/dist/circle/index
+[ERROR]prop layerColor 的默认值 undefined 与类型 String 不一致。    fileKey: node_modules/@vant/weapp/dist/circle/index
+转换进度: 149 / 766   fileKey：node_modules/@vant/weapp/dist/col/index
+转换进度: 150 / 766   fileKey：node_modules/@vant/weapp/dist/collapse/index
+转换进度: 151 / 766   fileKey：node_modules/@vant/weapp/dist/collapse-item/animate
+转换进度: 152 / 766   fileKey：node_modules/@vant/weapp/dist/collapse-item/index
+转换进度: 153 / 766   fileKey：node_modules/@vant/weapp/dist/common/color
+转换进度: 154 / 766   fileKey：node_modules/@vant/weapp/dist/common/component
+
+[Tip]这个页面的结构非标准结构，工具已尝试自动修复，如仍有问题，请先调整为标准结构后(如：Page({}))，再转换。 file:node_modules/@vant/weapp/dist/common/component
+转换进度: 155 / 766   fileKey：node_modules/@vant/weapp/dist/common/index
+转换进度: 156 / 766   fileKey：node_modules/@vant/weapp/dist/common/relation
+转换进度: 157 / 766   fileKey：node_modules/@vant/weapp/dist/common/style/clearfix
+转换进度: 158 / 766   fileKey：node_modules/@vant/weapp/dist/common/style/ellipsis
+转换进度: 159 / 766   fileKey：node_modules/@vant/weapp/dist/common/style/hairline
+转换进度: 160 / 766   fileKey：node_modules/@vant/weapp/dist/common/style/mixins/clearfix
+转换进度: 161 / 766   fileKey：node_modules/@vant/weapp/dist/common/style/mixins/ellipsis
+转换进度: 162 / 766   fileKey：node_modules/@vant/weapp/dist/common/style/mixins/hairline
+转换进度: 163 / 766   fileKey：node_modules/@vant/weapp/dist/common/style/var
+转换进度: 164 / 766   fileKey：node_modules/@vant/weapp/dist/common/utils
+转换进度: 165 / 766   fileKey：node_modules/@vant/weapp/dist/common/validator
+转换进度: 166 / 766   fileKey：node_modules/@vant/weapp/dist/common/version
+转换进度: 167 / 766   fileKey：node_modules/@vant/weapp/dist/config-provider/index
+转换进度: 168 / 766   fileKey：node_modules/@vant/weapp/dist/count-down/index
+转换进度: 169 / 766   fileKey：node_modules/@vant/weapp/dist/count-down/utils
+转换进度: 170 / 766   fileKey：node_modules/@vant/weapp/dist/datetime-picker/index
+转换进度: 171 / 766   fileKey：node_modules/@vant/weapp/dist/definitions/index
+转换进度: 172 / 766   fileKey：node_modules/@vant/weapp/dist/dialog/dialog
+转换进度: 173 / 766   fileKey：node_modules/@vant/weapp/dist/dialog/index
+[ERROR]prop confirmButtonColor 的默认值 undefined 与类型 String 不一致。    fileKey: node_modules/@vant/weapp/dist/dialog/index
+[ERROR]prop cancelButtonColor 的默认值 undefined 与类型 String 不一致。    fileKey: node_modules/@vant/weapp/dist/dialog/index
+转换进度: 174 / 766   fileKey：node_modules/@vant/weapp/dist/divider/index
+转换进度: 175 / 766   fileKey：node_modules/@vant/weapp/dist/dropdown-item/index
+转换进度: 176 / 766   fileKey：node_modules/@vant/weapp/dist/dropdown-item/shared
+转换进度: 177 / 766   fileKey：node_modules/@vant/weapp/dist/dropdown-menu/index
+转换进度: 178 / 766   fileKey：node_modules/@vant/weapp/dist/empty/index
+转换进度: 179 / 766   fileKey：node_modules/@vant/weapp/dist/field/index
+转换进度: 180 / 766   fileKey：node_modules/@vant/weapp/dist/field/input
+转换进度: 181 / 766   fileKey：node_modules/@vant/weapp/dist/field/props
+转换进度: 182 / 766   fileKey：node_modules/@vant/weapp/dist/field/textarea
+转换进度: 183 / 766   fileKey：node_modules/@vant/weapp/dist/field/types
+转换进度: 184 / 766   fileKey：node_modules/@vant/weapp/dist/goods-action/index
+转换进度: 185 / 766   fileKey：node_modules/@vant/weapp/dist/goods-action-button/index
+转换进度: 186 / 766   fileKey：node_modules/@vant/weapp/dist/goods-action-icon/index
+转换进度: 187 / 766   fileKey：node_modules/@vant/weapp/dist/grid/index
+转换进度: 188 / 766   fileKey：node_modules/@vant/weapp/dist/grid-item/index
+转换进度: 189 / 766   fileKey：node_modules/@vant/weapp/dist/icon/index
+
+[Tip]这里引用的全是网络字体，可能在app上面有兼容问题（如字体图标显示不出来，运行后没问题就不用管）  fileKey: node_modules/@vant/weapp/dist/icon/index
+转换进度: 190 / 766   fileKey：node_modules/@vant/weapp/dist/image/index
+转换进度: 191 / 766   fileKey：node_modules/@vant/weapp/dist/index-anchor/index
+转换进度: 192 / 766   fileKey：node_modules/@vant/weapp/dist/index-bar/index
+[ERROR]prop highlightColor 的默认值 undefined 与类型 String 不一致。    fileKey: node_modules/@vant/weapp/dist/index-bar/index
+转换进度: 193 / 766   fileKey：node_modules/@vant/weapp/dist/info/index
+转换进度: 194 / 766   fileKey：node_modules/@vant/weapp/dist/loading/index
+转换进度: 195 / 766   fileKey：node_modules/@vant/weapp/dist/mixins/basic
+转换进度: 196 / 766   fileKey：node_modules/@vant/weapp/dist/mixins/button
+转换进度: 197 / 766   fileKey：node_modules/@vant/weapp/dist/mixins/link
+转换进度: 198 / 766   fileKey：node_modules/@vant/weapp/dist/mixins/page-scroll
+转换进度: 199 / 766   fileKey：node_modules/@vant/weapp/dist/mixins/touch
+转换进度: 200 / 766   fileKey：node_modules/@vant/weapp/dist/mixins/transition
+转换进度: 201 / 766   fileKey：node_modules/@vant/weapp/dist/nav-bar/index
+转换进度: 202 / 766   fileKey：node_modules/@vant/weapp/dist/notice-bar/index
+转换进度: 203 / 766   fileKey：node_modules/@vant/weapp/dist/notify/index
+[ERROR]prop color 的默认值 undefined 与类型 String 不一致。    fileKey: node_modules/@vant/weapp/dist/notify/index
+转换进度: 204 / 766   fileKey：node_modules/@vant/weapp/dist/notify/notify
+转换进度: 205 / 766   fileKey：node_modules/@vant/weapp/dist/overlay/index
+转换进度: 206 / 766   fileKey：node_modules/@vant/weapp/dist/panel/index
+转换进度: 207 / 766   fileKey：node_modules/@vant/weapp/dist/picker/index
+转换进度: 208 / 766   fileKey：node_modules/@vant/weapp/dist/picker/shared
+转换进度: 209 / 766   fileKey：node_modules/@vant/weapp/dist/picker/toolbar
+转换进度: 210 / 766   fileKey：node_modules/@vant/weapp/dist/picker-column/index
+转换进度: 211 / 766   fileKey：node_modules/@vant/weapp/dist/popup/index
+转换进度: 212 / 766   fileKey：node_modules/@vant/weapp/dist/progress/index
+[ERROR]prop color 的默认值 undefined 与类型 String 不一致。    fileKey: node_modules/@vant/weapp/dist/progress/index
+转换进度: 213 / 766   fileKey：node_modules/@vant/weapp/dist/radio/index
+转换进度: 214 / 766   fileKey：node_modules/@vant/weapp/dist/radio-group/index
+转换进度: 215 / 766   fileKey：node_modules/@vant/weapp/dist/rate/index
+转换进度: 216 / 766   fileKey：node_modules/@vant/weapp/dist/row/index
+转换进度: 217 / 766   fileKey：node_modules/@vant/weapp/dist/search/index
+[ERROR]prop maxlength 的默认值 undefined 与类型 Number 不一致。    fileKey: node_modules/@vant/weapp/dist/search/index
+转换进度: 218 / 766   fileKey：node_modules/@vant/weapp/dist/share-sheet/index
+转换进度: 219 / 766   fileKey：node_modules/@vant/weapp/dist/share-sheet/options
+转换进度: 220 / 766   fileKey：node_modules/@vant/weapp/dist/sidebar/index
+转换进度: 221 / 766   fileKey：node_modules/@vant/weapp/dist/sidebar-item/index
+转换进度: 222 / 766   fileKey：node_modules/@vant/weapp/dist/skeleton/index
+转换进度: 223 / 766   fileKey：node_modules/@vant/weapp/dist/slider/index
+转换进度: 224 / 766   fileKey：node_modules/@vant/weapp/dist/stepper/index
+[ERROR]prop decimalLength 的默认值 null 与类型 Number 不一致。    fileKey: node_modules/@vant/weapp/dist/stepper/index
+转换进度: 225 / 766   fileKey：node_modules/@vant/weapp/dist/steps/index
+[ERROR]prop activeColor 的默认值 undefined 与类型 String 不一致。    fileKey: node_modules/@vant/weapp/dist/steps/index
+[ERROR]prop inactiveColor 的默认值 undefined 与类型 String 不一致。    fileKey: node_modules/@vant/weapp/dist/steps/index
+转换进度: 226 / 766   fileKey：node_modules/@vant/weapp/dist/sticky/index
+转换进度: 227 / 766   fileKey：node_modules/@vant/weapp/dist/submit-bar/index
+转换进度: 228 / 766   fileKey：node_modules/@vant/weapp/dist/swipe-cell/index
+转换进度: 229 / 766   fileKey：node_modules/@vant/weapp/dist/switch/index
+转换进度: 230 / 766   fileKey：node_modules/@vant/weapp/dist/tab/index
+转换进度: 231 / 766   fileKey：node_modules/@vant/weapp/dist/tabbar/index
+转换进度: 232 / 766   fileKey：node_modules/@vant/weapp/dist/tabbar-item/index
+转换进度: 233 / 766   fileKey：node_modules/@vant/weapp/dist/tabs/index
+转换进度: 234 / 766   fileKey：node_modules/@vant/weapp/dist/tag/index
+转换进度: 235 / 766   fileKey：node_modules/@vant/weapp/dist/toast/index
+转换进度: 236 / 766   fileKey：node_modules/@vant/weapp/dist/toast/toast
+转换进度: 237 / 766   fileKey：node_modules/@vant/weapp/dist/transition/index
+转换进度: 238 / 766   fileKey：node_modules/@vant/weapp/dist/tree-select/index
+[ERROR]prop max 的默认值 undefined 与类型 Number 不一致。    fileKey: node_modules/@vant/weapp/dist/tree-select/index
+转换进度: 239 / 766   fileKey：node_modules/@vant/weapp/dist/uploader/index
+转换进度: 240 / 766   fileKey：node_modules/@vant/weapp/dist/uploader/shared
+转换进度: 241 / 766   fileKey：node_modules/@vant/weapp/dist/uploader/utils
+转换进度: 242 / 766   fileKey：node_modules/@vant/weapp/dist/wxs/add-unit
+转换进度: 243 / 766   fileKey：node_modules/@vant/weapp/dist/wxs/array
+转换进度: 244 / 766   fileKey：node_modules/@vant/weapp/dist/wxs/bem
+转换进度: 245 / 766   fileKey：node_modules/@vant/weapp/dist/wxs/memoize
+转换进度: 246 / 766   fileKey：node_modules/@vant/weapp/dist/wxs/object
+转换进度: 247 / 766   fileKey：node_modules/@vant/weapp/dist/wxs/style
+转换进度: 248 / 766   fileKey：node_modules/@vant/weapp/dist/wxs/utils
+转换进度: 249 / 766   fileKey：node_modules/@vant/weapp/lib/action-sheet/index
+转换进度: 250 / 766   fileKey：node_modules/@vant/weapp/lib/area/index
+转换进度: 251 / 766   fileKey：node_modules/@vant/weapp/lib/button/index
+转换进度: 252 / 766   fileKey：node_modules/@vant/weapp/lib/calendar/calendar
+转换进度: 253 / 766   fileKey：node_modules/@vant/weapp/lib/calendar/components/header/index
+转换进度: 254 / 766   fileKey：node_modules/@vant/weapp/lib/calendar/components/month/index
+转换进度: 255 / 766   fileKey：node_modules/@vant/weapp/lib/calendar/index
+[ERROR]prop minDate 的默认值 undefined 与类型 Number 不一致。    fileKey: node_modules/@vant/weapp/lib/calendar/index
+[ERROR]prop maxDate 的默认值 undefined 与类型 Number 不一致。    fileKey: node_modules/@vant/weapp/lib/calendar/index
+转换进度: 256 / 766   fileKey：node_modules/@vant/weapp/lib/calendar/utils
+转换进度: 257 / 766   fileKey：node_modules/@vant/weapp/lib/card/index
+转换进度: 258 / 766   fileKey：node_modules/@vant/weapp/lib/cascader/index
+转换进度: 259 / 766   fileKey：node_modules/@vant/weapp/lib/cell/index
+转换进度: 260 / 766   fileKey：node_modules/@vant/weapp/lib/cell-group/index
+转换进度: 261 / 766   fileKey：node_modules/@vant/weapp/lib/checkbox/index
+转换进度: 262 / 766   fileKey：node_modules/@vant/weapp/lib/checkbox-group/index
+转换进度: 263 / 766   fileKey：node_modules/@vant/weapp/lib/circle/canvas
+转换进度: 264 / 766   fileKey：node_modules/@vant/weapp/lib/circle/index
+转换进度: 265 / 766   fileKey：node_modules/@vant/weapp/lib/col/index
+转换进度: 266 / 766   fileKey：node_modules/@vant/weapp/lib/collapse/index
+转换进度: 267 / 766   fileKey：node_modules/@vant/weapp/lib/collapse-item/animate
+转换进度: 268 / 766   fileKey：node_modules/@vant/weapp/lib/collapse-item/index
+转换进度: 269 / 766   fileKey：node_modules/@vant/weapp/lib/common/color
+转换进度: 270 / 766   fileKey：node_modules/@vant/weapp/lib/common/component
+
+[Tip]这个页面的结构非标准结构，工具已尝试自动修复，如仍有问题，请先调整为标准结构后(如：Page({}))，再转换。 file:node_modules/@vant/weapp/lib/common/component
+转换进度: 271 / 766   fileKey：node_modules/@vant/weapp/lib/common/index
+转换进度: 272 / 766   fileKey：node_modules/@vant/weapp/lib/common/relation
+转换进度: 273 / 766   fileKey：node_modules/@vant/weapp/lib/common/style/clearfix
+转换进度: 274 / 766   fileKey：node_modules/@vant/weapp/lib/common/style/ellipsis
+转换进度: 275 / 766   fileKey：node_modules/@vant/weapp/lib/common/style/hairline
+转换进度: 276 / 766   fileKey：node_modules/@vant/weapp/lib/common/style/mixins/clearfix
+转换进度: 277 / 766   fileKey：node_modules/@vant/weapp/lib/common/style/mixins/ellipsis
+转换进度: 278 / 766   fileKey：node_modules/@vant/weapp/lib/common/style/mixins/hairline
+转换进度: 279 / 766   fileKey：node_modules/@vant/weapp/lib/common/style/var
+转换进度: 280 / 766   fileKey：node_modules/@vant/weapp/lib/common/utils
+转换进度: 281 / 766   fileKey：node_modules/@vant/weapp/lib/common/validator
+转换进度: 282 / 766   fileKey：node_modules/@vant/weapp/lib/common/version
+转换进度: 283 / 766   fileKey：node_modules/@vant/weapp/lib/config-provider/index
+转换进度: 284 / 766   fileKey：node_modules/@vant/weapp/lib/count-down/index
+转换进度: 285 / 766   fileKey：node_modules/@vant/weapp/lib/count-down/utils
+转换进度: 286 / 766   fileKey：node_modules/@vant/weapp/lib/datetime-picker/index
+转换进度: 287 / 766   fileKey：node_modules/@vant/weapp/lib/definitions/index
+转换进度: 288 / 766   fileKey：node_modules/@vant/weapp/lib/dialog/dialog
+转换进度: 289 / 766   fileKey：node_modules/@vant/weapp/lib/dialog/index
+转换进度: 290 / 766   fileKey：node_modules/@vant/weapp/lib/divider/index
+转换进度: 291 / 766   fileKey：node_modules/@vant/weapp/lib/dropdown-item/index
+转换进度: 292 / 766   fileKey：node_modules/@vant/weapp/lib/dropdown-item/shared
+转换进度: 293 / 766   fileKey：node_modules/@vant/weapp/lib/dropdown-menu/index
+转换进度: 294 / 766   fileKey：node_modules/@vant/weapp/lib/empty/index
+转换进度: 295 / 766   fileKey：node_modules/@vant/weapp/lib/field/index
+转换进度: 296 / 766   fileKey：node_modules/@vant/weapp/lib/field/input
+转换进度: 297 / 766   fileKey：node_modules/@vant/weapp/lib/field/props
+转换进度: 298 / 766   fileKey：node_modules/@vant/weapp/lib/field/textarea
+转换进度: 299 / 766   fileKey：node_modules/@vant/weapp/lib/field/types
+转换进度: 300 / 766   fileKey：node_modules/@vant/weapp/lib/goods-action/index
+转换进度: 301 / 766   fileKey：node_modules/@vant/weapp/lib/goods-action-button/index
+转换进度: 302 / 766   fileKey：node_modules/@vant/weapp/lib/goods-action-icon/index
+转换进度: 303 / 766   fileKey：node_modules/@vant/weapp/lib/grid/index
+转换进度: 304 / 766   fileKey：node_modules/@vant/weapp/lib/grid-item/index
+转换进度: 305 / 766   fileKey：node_modules/@vant/weapp/lib/icon/index
+
+[Tip]这里引用的全是网络字体，可能在app上面有兼容问题（如字体图标显示不出来，运行后没问题就不用管）  fileKey: node_modules/@vant/weapp/lib/icon/index
+转换进度: 306 / 766   fileKey：node_modules/@vant/weapp/lib/image/index
+转换进度: 307 / 766   fileKey：node_modules/@vant/weapp/lib/index-anchor/index
+转换进度: 308 / 766   fileKey：node_modules/@vant/weapp/lib/index-bar/index
+转换进度: 309 / 766   fileKey：node_modules/@vant/weapp/lib/info/index
+转换进度: 310 / 766   fileKey：node_modules/@vant/weapp/lib/loading/index
+转换进度: 311 / 766   fileKey：node_modules/@vant/weapp/lib/mixins/basic
+转换进度: 312 / 766   fileKey：node_modules/@vant/weapp/lib/mixins/button
+转换进度: 313 / 766   fileKey：node_modules/@vant/weapp/lib/mixins/link
+转换进度: 314 / 766   fileKey：node_modules/@vant/weapp/lib/mixins/page-scroll
+转换进度: 315 / 766   fileKey：node_modules/@vant/weapp/lib/mixins/touch
+转换进度: 316 / 766   fileKey：node_modules/@vant/weapp/lib/mixins/transition
+转换进度: 317 / 766   fileKey：node_modules/@vant/weapp/lib/nav-bar/index
+转换进度: 318 / 766   fileKey：node_modules/@vant/weapp/lib/notice-bar/index
+转换进度: 319 / 766   fileKey：node_modules/@vant/weapp/lib/notify/index
+转换进度: 320 / 766   fileKey：node_modules/@vant/weapp/lib/notify/notify
+转换进度: 321 / 766   fileKey：node_modules/@vant/weapp/lib/overlay/index
+转换进度: 322 / 766   fileKey：node_modules/@vant/weapp/lib/panel/index
+转换进度: 323 / 766   fileKey：node_modules/@vant/weapp/lib/picker/index
+转换进度: 324 / 766   fileKey：node_modules/@vant/weapp/lib/picker/shared
+转换进度: 325 / 766   fileKey：node_modules/@vant/weapp/lib/picker/toolbar
+转换进度: 326 / 766   fileKey：node_modules/@vant/weapp/lib/picker-column/index
+转换进度: 327 / 766   fileKey：node_modules/@vant/weapp/lib/popup/index
+转换进度: 328 / 766   fileKey：node_modules/@vant/weapp/lib/progress/index
+转换进度: 329 / 766   fileKey：node_modules/@vant/weapp/lib/radio/index
+转换进度: 330 / 766   fileKey：node_modules/@vant/weapp/lib/radio-group/index
+转换进度: 331 / 766   fileKey：node_modules/@vant/weapp/lib/rate/index
+转换进度: 332 / 766   fileKey：node_modules/@vant/weapp/lib/row/index
+转换进度: 333 / 766   fileKey：node_modules/@vant/weapp/lib/search/index
+[ERROR]prop maxlength 的默认值 undefined 与类型 Number 不一致。    fileKey: node_modules/@vant/weapp/lib/search/index
+转换进度: 334 / 766   fileKey：node_modules/@vant/weapp/lib/share-sheet/index
+转换进度: 335 / 766   fileKey：node_modules/@vant/weapp/lib/share-sheet/options
+转换进度: 336 / 766   fileKey：node_modules/@vant/weapp/lib/sidebar/index
+转换进度: 337 / 766   fileKey：node_modules/@vant/weapp/lib/sidebar-item/index
+转换进度: 338 / 766   fileKey：node_modules/@vant/weapp/lib/skeleton/index
+转换进度: 339 / 766   fileKey：node_modules/@vant/weapp/lib/slider/index
+转换进度: 340 / 766   fileKey：node_modules/@vant/weapp/lib/stepper/index
+[ERROR]prop decimalLength 的默认值 null 与类型 Number 不一致。    fileKey: node_modules/@vant/weapp/lib/stepper/index
+转换进度: 341 / 766   fileKey：node_modules/@vant/weapp/lib/steps/index
+转换进度: 342 / 766   fileKey：node_modules/@vant/weapp/lib/sticky/index
+转换进度: 343 / 766   fileKey：node_modules/@vant/weapp/lib/submit-bar/index
+转换进度: 344 / 766   fileKey：node_modules/@vant/weapp/lib/swipe-cell/index
+转换进度: 345 / 766   fileKey：node_modules/@vant/weapp/lib/switch/index
+转换进度: 346 / 766   fileKey：node_modules/@vant/weapp/lib/tab/index
+转换进度: 347 / 766   fileKey：node_modules/@vant/weapp/lib/tabbar/index
+转换进度: 348 / 766   fileKey：node_modules/@vant/weapp/lib/tabbar-item/index
+转换进度: 349 / 766   fileKey：node_modules/@vant/weapp/lib/tabs/index
+转换进度: 350 / 766   fileKey：node_modules/@vant/weapp/lib/tag/index
+转换进度: 351 / 766   fileKey：node_modules/@vant/weapp/lib/toast/index
+转换进度: 352 / 766   fileKey：node_modules/@vant/weapp/lib/toast/toast
+转换进度: 353 / 766   fileKey：node_modules/@vant/weapp/lib/transition/index
+转换进度: 354 / 766   fileKey：node_modules/@vant/weapp/lib/tree-select/index
+[ERROR]prop max 的默认值 undefined 与类型 Number 不一致。    fileKey: node_modules/@vant/weapp/lib/tree-select/index
+转换进度: 355 / 766   fileKey：node_modules/@vant/weapp/lib/uploader/index
+转换进度: 356 / 766   fileKey：node_modules/@vant/weapp/lib/uploader/shared
+转换进度: 357 / 766   fileKey：node_modules/@vant/weapp/lib/uploader/utils
+转换进度: 358 / 766   fileKey：node_modules/@vant/weapp/lib/wxs/add-unit
+转换进度: 359 / 766   fileKey：node_modules/@vant/weapp/lib/wxs/array
+转换进度: 360 / 766   fileKey：node_modules/@vant/weapp/lib/wxs/bem
+转换进度: 361 / 766   fileKey：node_modules/@vant/weapp/lib/wxs/memoize
+转换进度: 362 / 766   fileKey：node_modules/@vant/weapp/lib/wxs/object
+转换进度: 363 / 766   fileKey：node_modules/@vant/weapp/lib/wxs/style
+转换进度: 364 / 766   fileKey：node_modules/@vant/weapp/lib/wxs/utils
+转换进度: 365 / 766   fileKey：node_modules/@vant/weapp/package
+转换进度: 366 / 766   fileKey：package-lock
+转换进度: 367 / 766   fileKey：package
+转换进度: 368 / 766   fileKey：pages/BLE_WIFI/BLE/BLE
+转换进度: 369 / 766   fileKey：pages/BLE_WIFI/BLUFI/blueConnect/blueConnect
+[WARN] 文件 pages/BLE_WIFI/images/round.gif 不存在，但仍然对路径进行转换为相对于static目录，运行时需注意！   fileKey: pages/BLE_WIFI/BLUFI/blueConnect/blueConnect
+[WARN] 文件 pages/BLE_WIFI/images/failure.png 不存在，但仍然对路径进行转换为相对于static目录，运行时需注意！   fileKey: pages/BLE_WIFI/BLUFI/blueConnect/blueConnect
+转换进度: 370 / 766   fileKey：pages/BLE_WIFI/BLUFI/blueDevices/blueDevices
+转换进度: 371 / 766   fileKey：pages/BLE_WIFI/BLUFI/blueWifi/blueWifi
+转换进度: 372 / 766   fileKey：pages/Control/device/device
+转换进度: 373 / 766   fileKey：pages/Control/pidControl/pidControl
+转换进度: 374 / 766   fileKey：pages/Index/data/data
+转换进度: 375 / 766   fileKey：pages/Index/home/home
+转换进度: 376 / 766   fileKey：pages/Index/user/user
+转换进度: 377 / 766   fileKey：project.config
+转换进度: 378 / 766   fileKey：project.private.config
+转换进度: 379 / 766   fileKey：sitemap
+转换进度: 380 / 766   fileKey：utils/BLE_util
+转换进度: 381 / 766   fileKey：utils/hex_hmac_sha1
+转换进度: 382 / 766   fileKey：utils/util
+转换进度: 383 / 766   fileKey：weui
+开始二次遍历及生成vue文件
+转换进度: 384 / 766   fileKey：app
+转换进度: 385 / 766   fileKey：crypto/aes
+转换进度: 386 / 766   fileKey：crypto/crypto-dh
+转换进度: 387 / 766   fileKey：crypto/lib/base64-js
+转换进度: 388 / 766   fileKey：crypto/lib/bn
+转换进度: 389 / 766   fileKey：crypto/lib/brorand
+转换进度: 390 / 766   fileKey：crypto/lib/buffer
+转换进度: 391 / 766   fileKey：crypto/lib/dh
+转换进度: 392 / 766   fileKey：crypto/lib/generatePrime
+转换进度: 393 / 766   fileKey：crypto/lib/ieee754
+转换进度: 394 / 766   fileKey：crypto/lib/miller-rabin
+转换进度: 395 / 766   fileKey：crypto/lib/randombytes
+转换进度: 396 / 766   fileKey：crypto/lib/safe-buffer
+转换进度: 397 / 766   fileKey：crypto/md5.min
+转换进度: 398 / 766   fileKey：custom-tab-bar/index
+转换进度: 399 / 766   fileKey：fonts/font
+转换进度: 400 / 766   fileKey：miniprogram_npm/@vant/weapp/action-sheet/index
+转换进度: 401 / 766   fileKey：miniprogram_npm/@vant/weapp/area/index
+转换进度: 402 / 766   fileKey：miniprogram_npm/@vant/weapp/button/index
+转换进度: 403 / 766   fileKey：miniprogram_npm/@vant/weapp/calendar/calendar
+转换进度: 404 / 766   fileKey：miniprogram_npm/@vant/weapp/calendar/components/header/index
+转换进度: 405 / 766   fileKey：miniprogram_npm/@vant/weapp/calendar/components/month/index
+转换进度: 406 / 766   fileKey：miniprogram_npm/@vant/weapp/calendar/index
+找不到这个组件: pages/BLE_WIFI/BLE/@vant/weapp/button/index
+找不到这个组件: pages/BLE_WIFI/BLE/@vant/weapp/button/index
+转换进度: 407 / 766   fileKey：miniprogram_npm/@vant/weapp/calendar/utils
+转换进度: 408 / 766   fileKey：miniprogram_npm/@vant/weapp/card/index
+转换进度: 409 / 766   fileKey：miniprogram_npm/@vant/weapp/cascader/index
+转换进度: 410 / 766   fileKey：miniprogram_npm/@vant/weapp/cell/index
+转换进度: 411 / 766   fileKey：miniprogram_npm/@vant/weapp/cell-group/index
+转换进度: 412 / 766   fileKey：miniprogram_npm/@vant/weapp/checkbox/index
+转换进度: 413 / 766   fileKey：miniprogram_npm/@vant/weapp/checkbox-group/index
+转换进度: 414 / 766   fileKey：miniprogram_npm/@vant/weapp/circle/canvas
+转换进度: 415 / 766   fileKey：miniprogram_npm/@vant/weapp/circle/index
+转换进度: 416 / 766   fileKey：miniprogram_npm/@vant/weapp/col/index
+转换进度: 417 / 766   fileKey：miniprogram_npm/@vant/weapp/collapse/index
+转换进度: 418 / 766   fileKey：miniprogram_npm/@vant/weapp/collapse-item/animate
+转换进度: 419 / 766   fileKey：miniprogram_npm/@vant/weapp/collapse-item/index
+找不到这个组件: pages/Index/user/@vant/weapp/cell/index
+转换进度: 420 / 766   fileKey：miniprogram_npm/@vant/weapp/common/color
+转换进度: 421 / 766   fileKey：miniprogram_npm/@vant/weapp/common/component
+转换进度: 422 / 766   fileKey：miniprogram_npm/@vant/weapp/common/index
+转换进度: 423 / 766   fileKey：miniprogram_npm/@vant/weapp/common/relation
+转换进度: 424 / 766   fileKey：miniprogram_npm/@vant/weapp/common/style/clearfix
+转换进度: 425 / 766   fileKey：miniprogram_npm/@vant/weapp/common/style/ellipsis
+转换进度: 426 / 766   fileKey：miniprogram_npm/@vant/weapp/common/style/hairline
+转换进度: 427 / 766   fileKey：miniprogram_npm/@vant/weapp/common/style/mixins/clearfix
+转换进度: 428 / 766   fileKey：miniprogram_npm/@vant/weapp/common/style/mixins/ellipsis
+转换进度: 429 / 766   fileKey：miniprogram_npm/@vant/weapp/common/style/mixins/hairline
+转换进度: 430 / 766   fileKey：miniprogram_npm/@vant/weapp/common/style/var
+转换进度: 431 / 766   fileKey：miniprogram_npm/@vant/weapp/common/utils
+转换进度: 432 / 766   fileKey：miniprogram_npm/@vant/weapp/common/validator
+转换进度: 433 / 766   fileKey：miniprogram_npm/@vant/weapp/common/version
+转换进度: 434 / 766   fileKey：miniprogram_npm/@vant/weapp/config-provider/index
+转换进度: 435 / 766   fileKey：miniprogram_npm/@vant/weapp/count-down/index
+转换进度: 436 / 766   fileKey：miniprogram_npm/@vant/weapp/count-down/utils
+转换进度: 437 / 766   fileKey：miniprogram_npm/@vant/weapp/datetime-picker/index
+转换进度: 438 / 766   fileKey：miniprogram_npm/@vant/weapp/definitions/index
+转换进度: 439 / 766   fileKey：miniprogram_npm/@vant/weapp/dialog/dialog
+转换进度: 440 / 766   fileKey：miniprogram_npm/@vant/weapp/dialog/index
+找不到这个组件: pages/BLE_WIFI/BLE/@vant/weapp/button/index
+找不到这个组件: pages/BLE_WIFI/BLE/@vant/weapp/button/index
+转换进度: 441 / 766   fileKey：miniprogram_npm/@vant/weapp/divider/index
+转换进度: 442 / 766   fileKey：miniprogram_npm/@vant/weapp/dropdown-item/index
+找不到这个组件: pages/Index/user/@vant/weapp/cell/index
+转换进度: 443 / 766   fileKey：miniprogram_npm/@vant/weapp/dropdown-item/shared
+转换进度: 444 / 766   fileKey：miniprogram_npm/@vant/weapp/dropdown-menu/index
+转换进度: 445 / 766   fileKey：miniprogram_npm/@vant/weapp/empty/index
+转换进度: 446 / 766   fileKey：miniprogram_npm/@vant/weapp/field/index
+找不到这个组件: pages/Index/user/@vant/weapp/cell/index
+转换进度: 447 / 766   fileKey：miniprogram_npm/@vant/weapp/field/input
+转换进度: 448 / 766   fileKey：miniprogram_npm/@vant/weapp/field/props
+转换进度: 449 / 766   fileKey：miniprogram_npm/@vant/weapp/field/textarea
+转换进度: 450 / 766   fileKey：miniprogram_npm/@vant/weapp/field/types
+转换进度: 451 / 766   fileKey：miniprogram_npm/@vant/weapp/goods-action/index
+转换进度: 452 / 766   fileKey：miniprogram_npm/@vant/weapp/goods-action-button/index
+找不到这个组件: pages/BLE_WIFI/BLE/@vant/weapp/button/index
+转换进度: 453 / 766   fileKey：miniprogram_npm/@vant/weapp/goods-action-icon/index
+找不到这个组件: pages/BLE_WIFI/BLE/@vant/weapp/button/index
+转换进度: 454 / 766   fileKey：miniprogram_npm/@vant/weapp/grid/index
+转换进度: 455 / 766   fileKey：miniprogram_npm/@vant/weapp/grid-item/index
+转换进度: 456 / 766   fileKey：miniprogram_npm/@vant/weapp/icon/index
+转换进度: 457 / 766   fileKey：miniprogram_npm/@vant/weapp/image/index
+转换进度: 458 / 766   fileKey：miniprogram_npm/@vant/weapp/index-anchor/index
+转换进度: 459 / 766   fileKey：miniprogram_npm/@vant/weapp/index-bar/index
+转换进度: 460 / 766   fileKey：miniprogram_npm/@vant/weapp/info/index
+转换进度: 461 / 766   fileKey：miniprogram_npm/@vant/weapp/loading/index
+转换进度: 462 / 766   fileKey：miniprogram_npm/@vant/weapp/mixins/basic
+转换进度: 463 / 766   fileKey：miniprogram_npm/@vant/weapp/mixins/button
+转换进度: 464 / 766   fileKey：miniprogram_npm/@vant/weapp/mixins/link
+转换进度: 465 / 766   fileKey：miniprogram_npm/@vant/weapp/mixins/page-scroll
+转换进度: 466 / 766   fileKey：miniprogram_npm/@vant/weapp/mixins/touch
+转换进度: 467 / 766   fileKey：miniprogram_npm/@vant/weapp/mixins/transition
+转换进度: 468 / 766   fileKey：miniprogram_npm/@vant/weapp/nav-bar/index
+转换进度: 469 / 766   fileKey：miniprogram_npm/@vant/weapp/notice-bar/index
+转换进度: 470 / 766   fileKey：miniprogram_npm/@vant/weapp/notify/index
+转换进度: 471 / 766   fileKey：miniprogram_npm/@vant/weapp/notify/notify
+转换进度: 472 / 766   fileKey：miniprogram_npm/@vant/weapp/overlay/index
+转换进度: 473 / 766   fileKey：miniprogram_npm/@vant/weapp/panel/index
+找不到这个组件: pages/Index/user/@vant/weapp/cell/index
+转换进度: 474 / 766   fileKey：miniprogram_npm/@vant/weapp/picker/index
+转换进度: 475 / 766   fileKey：miniprogram_npm/@vant/weapp/picker/shared
+转换进度: 476 / 766   fileKey：miniprogram_npm/@vant/weapp/picker/toolbar
+转换进度: 477 / 766   fileKey：miniprogram_npm/@vant/weapp/picker-column/index
+转换进度: 478 / 766   fileKey：miniprogram_npm/@vant/weapp/popup/index
+转换进度: 479 / 766   fileKey：miniprogram_npm/@vant/weapp/progress/index
+转换进度: 480 / 766   fileKey：miniprogram_npm/@vant/weapp/radio/index
+转换进度: 481 / 766   fileKey：miniprogram_npm/@vant/weapp/radio-group/index
+转换进度: 482 / 766   fileKey：miniprogram_npm/@vant/weapp/rate/index
+转换进度: 483 / 766   fileKey：miniprogram_npm/@vant/weapp/row/index
+转换进度: 484 / 766   fileKey：miniprogram_npm/@vant/weapp/search/index
+转换进度: 485 / 766   fileKey：miniprogram_npm/@vant/weapp/share-sheet/index
+转换进度: 486 / 766   fileKey：miniprogram_npm/@vant/weapp/share-sheet/options
+转换进度: 487 / 766   fileKey：miniprogram_npm/@vant/weapp/sidebar/index
+转换进度: 488 / 766   fileKey：miniprogram_npm/@vant/weapp/sidebar-item/index
+转换进度: 489 / 766   fileKey：miniprogram_npm/@vant/weapp/skeleton/index
+转换进度: 490 / 766   fileKey：miniprogram_npm/@vant/weapp/slider/index
+转换进度: 491 / 766   fileKey：miniprogram_npm/@vant/weapp/stepper/index
+转换进度: 492 / 766   fileKey：miniprogram_npm/@vant/weapp/steps/index
+转换进度: 493 / 766   fileKey：miniprogram_npm/@vant/weapp/sticky/index
+转换进度: 494 / 766   fileKey：miniprogram_npm/@vant/weapp/submit-bar/index
+找不到这个组件: pages/BLE_WIFI/BLE/@vant/weapp/button/index
+转换进度: 495 / 766   fileKey：miniprogram_npm/@vant/weapp/swipe-cell/index
+转换进度: 496 / 766   fileKey：miniprogram_npm/@vant/weapp/switch/index
+转换进度: 497 / 766   fileKey：miniprogram_npm/@vant/weapp/tab/index
+转换进度: 498 / 766   fileKey：miniprogram_npm/@vant/weapp/tabbar/index
+转换进度: 499 / 766   fileKey：miniprogram_npm/@vant/weapp/tabbar-item/index
+转换进度: 500 / 766   fileKey：miniprogram_npm/@vant/weapp/tabs/index
+转换进度: 501 / 766   fileKey：miniprogram_npm/@vant/weapp/tag/index
+转换进度: 502 / 766   fileKey：miniprogram_npm/@vant/weapp/toast/index
+转换进度: 503 / 766   fileKey：miniprogram_npm/@vant/weapp/toast/toast
+转换进度: 504 / 766   fileKey：miniprogram_npm/@vant/weapp/transition/index
+转换进度: 505 / 766   fileKey：miniprogram_npm/@vant/weapp/tree-select/index
+转换进度: 506 / 766   fileKey：miniprogram_npm/@vant/weapp/uploader/index
+转换进度: 507 / 766   fileKey：miniprogram_npm/@vant/weapp/uploader/shared
+转换进度: 508 / 766   fileKey：miniprogram_npm/@vant/weapp/uploader/utils
+转换进度: 509 / 766   fileKey：miniprogram_npm/@vant/weapp/wxs/add-unit
+转换进度: 510 / 766   fileKey：miniprogram_npm/@vant/weapp/wxs/array
+转换进度: 511 / 766   fileKey：miniprogram_npm/@vant/weapp/wxs/bem
+转换进度: 512 / 766   fileKey：miniprogram_npm/@vant/weapp/wxs/memoize
+转换进度: 513 / 766   fileKey：miniprogram_npm/@vant/weapp/wxs/object
+转换进度: 514 / 766   fileKey：miniprogram_npm/@vant/weapp/wxs/style
+转换进度: 515 / 766   fileKey：miniprogram_npm/@vant/weapp/wxs/utils
+转换进度: 516 / 766   fileKey：node_modules/@vant/weapp/dist/action-sheet/index
+转换进度: 517 / 766   fileKey：node_modules/@vant/weapp/dist/area/index
+转换进度: 518 / 766   fileKey：node_modules/@vant/weapp/dist/button/index
+转换进度: 519 / 766   fileKey：node_modules/@vant/weapp/dist/calendar/calendar
+转换进度: 520 / 766   fileKey：node_modules/@vant/weapp/dist/calendar/components/header/index
+转换进度: 521 / 766   fileKey：node_modules/@vant/weapp/dist/calendar/components/month/index
+转换进度: 522 / 766   fileKey：node_modules/@vant/weapp/dist/calendar/index
+找不到这个组件: pages/BLE_WIFI/BLE/@vant/weapp/button/index
+找不到这个组件: pages/BLE_WIFI/BLE/@vant/weapp/button/index
+转换进度: 523 / 766   fileKey：node_modules/@vant/weapp/dist/calendar/utils
+转换进度: 524 / 766   fileKey：node_modules/@vant/weapp/dist/card/index
+转换进度: 525 / 766   fileKey：node_modules/@vant/weapp/dist/cascader/index
+转换进度: 526 / 766   fileKey：node_modules/@vant/weapp/dist/cell/index
+转换进度: 527 / 766   fileKey：node_modules/@vant/weapp/dist/cell-group/index
+转换进度: 528 / 766   fileKey：node_modules/@vant/weapp/dist/checkbox/index
+转换进度: 529 / 766   fileKey：node_modules/@vant/weapp/dist/checkbox-group/index
+转换进度: 530 / 766   fileKey：node_modules/@vant/weapp/dist/circle/canvas
+转换进度: 531 / 766   fileKey：node_modules/@vant/weapp/dist/circle/index
+转换进度: 532 / 766   fileKey：node_modules/@vant/weapp/dist/col/index
+转换进度: 533 / 766   fileKey：node_modules/@vant/weapp/dist/collapse/index
+转换进度: 534 / 766   fileKey：node_modules/@vant/weapp/dist/collapse-item/animate
+转换进度: 535 / 766   fileKey：node_modules/@vant/weapp/dist/collapse-item/index
+找不到这个组件: pages/Index/user/@vant/weapp/cell/index
+转换进度: 536 / 766   fileKey：node_modules/@vant/weapp/dist/common/color
+转换进度: 537 / 766   fileKey：node_modules/@vant/weapp/dist/common/component
+转换进度: 538 / 766   fileKey：node_modules/@vant/weapp/dist/common/index
+转换进度: 539 / 766   fileKey：node_modules/@vant/weapp/dist/common/relation
+转换进度: 540 / 766   fileKey：node_modules/@vant/weapp/dist/common/style/clearfix
+转换进度: 541 / 766   fileKey：node_modules/@vant/weapp/dist/common/style/ellipsis
+转换进度: 542 / 766   fileKey：node_modules/@vant/weapp/dist/common/style/hairline
+转换进度: 543 / 766   fileKey：node_modules/@vant/weapp/dist/common/style/mixins/clearfix
+转换进度: 544 / 766   fileKey：node_modules/@vant/weapp/dist/common/style/mixins/ellipsis
+转换进度: 545 / 766   fileKey：node_modules/@vant/weapp/dist/common/style/mixins/hairline
+转换进度: 546 / 766   fileKey：node_modules/@vant/weapp/dist/common/style/var
+转换进度: 547 / 766   fileKey：node_modules/@vant/weapp/dist/common/utils
+转换进度: 548 / 766   fileKey：node_modules/@vant/weapp/dist/common/validator
+转换进度: 549 / 766   fileKey：node_modules/@vant/weapp/dist/common/version
+转换进度: 550 / 766   fileKey：node_modules/@vant/weapp/dist/config-provider/index
+转换进度: 551 / 766   fileKey：node_modules/@vant/weapp/dist/count-down/index
+转换进度: 552 / 766   fileKey：node_modules/@vant/weapp/dist/count-down/utils
+转换进度: 553 / 766   fileKey：node_modules/@vant/weapp/dist/datetime-picker/index
+转换进度: 554 / 766   fileKey：node_modules/@vant/weapp/dist/definitions/index
+转换进度: 555 / 766   fileKey：node_modules/@vant/weapp/dist/dialog/dialog
+转换进度: 556 / 766   fileKey：node_modules/@vant/weapp/dist/dialog/index
+找不到这个组件: pages/BLE_WIFI/BLE/@vant/weapp/button/index
+找不到这个组件: pages/BLE_WIFI/BLE/@vant/weapp/button/index
+转换进度: 557 / 766   fileKey：node_modules/@vant/weapp/dist/divider/index
+转换进度: 558 / 766   fileKey：node_modules/@vant/weapp/dist/dropdown-item/index
+找不到这个组件: pages/Index/user/@vant/weapp/cell/index
+转换进度: 559 / 766   fileKey：node_modules/@vant/weapp/dist/dropdown-item/shared
+转换进度: 560 / 766   fileKey：node_modules/@vant/weapp/dist/dropdown-menu/index
+转换进度: 561 / 766   fileKey：node_modules/@vant/weapp/dist/empty/index
+转换进度: 562 / 766   fileKey：node_modules/@vant/weapp/dist/field/index
+找不到这个组件: pages/Index/user/@vant/weapp/cell/index
+转换进度: 563 / 766   fileKey：node_modules/@vant/weapp/dist/field/input
+转换进度: 564 / 766   fileKey：node_modules/@vant/weapp/dist/field/props
+转换进度: 565 / 766   fileKey：node_modules/@vant/weapp/dist/field/textarea
+转换进度: 566 / 766   fileKey：node_modules/@vant/weapp/dist/field/types
+转换进度: 567 / 766   fileKey：node_modules/@vant/weapp/dist/goods-action/index
+转换进度: 568 / 766   fileKey：node_modules/@vant/weapp/dist/goods-action-button/index
+找不到这个组件: pages/BLE_WIFI/BLE/@vant/weapp/button/index
+转换进度: 569 / 766   fileKey：node_modules/@vant/weapp/dist/goods-action-icon/index
+找不到这个组件: pages/BLE_WIFI/BLE/@vant/weapp/button/index
+转换进度: 570 / 766   fileKey：node_modules/@vant/weapp/dist/grid/index
+转换进度: 571 / 766   fileKey：node_modules/@vant/weapp/dist/grid-item/index
+转换进度: 572 / 766   fileKey：node_modules/@vant/weapp/dist/icon/index
+转换进度: 573 / 766   fileKey：node_modules/@vant/weapp/dist/image/index
+转换进度: 574 / 766   fileKey：node_modules/@vant/weapp/dist/index-anchor/index
+转换进度: 575 / 766   fileKey：node_modules/@vant/weapp/dist/index-bar/index
+转换进度: 576 / 766   fileKey：node_modules/@vant/weapp/dist/info/index
+转换进度: 577 / 766   fileKey：node_modules/@vant/weapp/dist/loading/index
+转换进度: 578 / 766   fileKey：node_modules/@vant/weapp/dist/mixins/basic
+转换进度: 579 / 766   fileKey：node_modules/@vant/weapp/dist/mixins/button
+转换进度: 580 / 766   fileKey：node_modules/@vant/weapp/dist/mixins/link
+转换进度: 581 / 766   fileKey：node_modules/@vant/weapp/dist/mixins/page-scroll
+转换进度: 582 / 766   fileKey：node_modules/@vant/weapp/dist/mixins/touch
+转换进度: 583 / 766   fileKey：node_modules/@vant/weapp/dist/mixins/transition
+转换进度: 584 / 766   fileKey：node_modules/@vant/weapp/dist/nav-bar/index
+转换进度: 585 / 766   fileKey：node_modules/@vant/weapp/dist/notice-bar/index
+转换进度: 586 / 766   fileKey：node_modules/@vant/weapp/dist/notify/index
+转换进度: 587 / 766   fileKey：node_modules/@vant/weapp/dist/notify/notify
+转换进度: 588 / 766   fileKey：node_modules/@vant/weapp/dist/overlay/index
+转换进度: 589 / 766   fileKey：node_modules/@vant/weapp/dist/panel/index
+找不到这个组件: pages/Index/user/@vant/weapp/cell/index
+转换进度: 590 / 766   fileKey：node_modules/@vant/weapp/dist/picker/index
+转换进度: 591 / 766   fileKey：node_modules/@vant/weapp/dist/picker/shared
+转换进度: 592 / 766   fileKey：node_modules/@vant/weapp/dist/picker/toolbar
+转换进度: 593 / 766   fileKey：node_modules/@vant/weapp/dist/picker-column/index
+转换进度: 594 / 766   fileKey：node_modules/@vant/weapp/dist/popup/index
+转换进度: 595 / 766   fileKey：node_modules/@vant/weapp/dist/progress/index
+转换进度: 596 / 766   fileKey：node_modules/@vant/weapp/dist/radio/index
+转换进度: 597 / 766   fileKey：node_modules/@vant/weapp/dist/radio-group/index
+转换进度: 598 / 766   fileKey：node_modules/@vant/weapp/dist/rate/index
+转换进度: 599 / 766   fileKey：node_modules/@vant/weapp/dist/row/index
+转换进度: 600 / 766   fileKey：node_modules/@vant/weapp/dist/search/index
+转换进度: 601 / 766   fileKey：node_modules/@vant/weapp/dist/share-sheet/index
+转换进度: 602 / 766   fileKey：node_modules/@vant/weapp/dist/share-sheet/options
+转换进度: 603 / 766   fileKey：node_modules/@vant/weapp/dist/sidebar/index
+转换进度: 604 / 766   fileKey：node_modules/@vant/weapp/dist/sidebar-item/index
+转换进度: 605 / 766   fileKey：node_modules/@vant/weapp/dist/skeleton/index
+转换进度: 606 / 766   fileKey：node_modules/@vant/weapp/dist/slider/index
+转换进度: 607 / 766   fileKey：node_modules/@vant/weapp/dist/stepper/index
+转换进度: 608 / 766   fileKey：node_modules/@vant/weapp/dist/steps/index
+转换进度: 609 / 766   fileKey：node_modules/@vant/weapp/dist/sticky/index
+转换进度: 610 / 766   fileKey：node_modules/@vant/weapp/dist/submit-bar/index
+找不到这个组件: pages/BLE_WIFI/BLE/@vant/weapp/button/index
+转换进度: 611 / 766   fileKey：node_modules/@vant/weapp/dist/swipe-cell/index
+转换进度: 612 / 766   fileKey：node_modules/@vant/weapp/dist/switch/index
+转换进度: 613 / 766   fileKey：node_modules/@vant/weapp/dist/tab/index
+转换进度: 614 / 766   fileKey：node_modules/@vant/weapp/dist/tabbar/index
+转换进度: 615 / 766   fileKey：node_modules/@vant/weapp/dist/tabbar-item/index
+转换进度: 616 / 766   fileKey：node_modules/@vant/weapp/dist/tabs/index
+转换进度: 617 / 766   fileKey：node_modules/@vant/weapp/dist/tag/index
+转换进度: 618 / 766   fileKey：node_modules/@vant/weapp/dist/toast/index
+转换进度: 619 / 766   fileKey：node_modules/@vant/weapp/dist/toast/toast
+转换进度: 620 / 766   fileKey：node_modules/@vant/weapp/dist/transition/index
+转换进度: 621 / 766   fileKey：node_modules/@vant/weapp/dist/tree-select/index
+转换进度: 622 / 766   fileKey：node_modules/@vant/weapp/dist/uploader/index
+转换进度: 623 / 766   fileKey：node_modules/@vant/weapp/dist/uploader/shared
+转换进度: 624 / 766   fileKey：node_modules/@vant/weapp/dist/uploader/utils
+转换进度: 625 / 766   fileKey：node_modules/@vant/weapp/dist/wxs/add-unit
+转换进度: 626 / 766   fileKey：node_modules/@vant/weapp/dist/wxs/array
+转换进度: 627 / 766   fileKey：node_modules/@vant/weapp/dist/wxs/bem
+转换进度: 628 / 766   fileKey：node_modules/@vant/weapp/dist/wxs/memoize
+转换进度: 629 / 766   fileKey：node_modules/@vant/weapp/dist/wxs/object
+转换进度: 630 / 766   fileKey：node_modules/@vant/weapp/dist/wxs/style
+转换进度: 631 / 766   fileKey：node_modules/@vant/weapp/dist/wxs/utils
+转换进度: 632 / 766   fileKey：node_modules/@vant/weapp/lib/action-sheet/index
+转换进度: 633 / 766   fileKey：node_modules/@vant/weapp/lib/area/index
+转换进度: 634 / 766   fileKey：node_modules/@vant/weapp/lib/button/index
+转换进度: 635 / 766   fileKey：node_modules/@vant/weapp/lib/calendar/calendar
+转换进度: 636 / 766   fileKey：node_modules/@vant/weapp/lib/calendar/components/header/index
+转换进度: 637 / 766   fileKey：node_modules/@vant/weapp/lib/calendar/components/month/index
+转换进度: 638 / 766   fileKey：node_modules/@vant/weapp/lib/calendar/index
+找不到这个组件: pages/BLE_WIFI/BLE/@vant/weapp/button/index
+找不到这个组件: pages/BLE_WIFI/BLE/@vant/weapp/button/index
+转换进度: 639 / 766   fileKey：node_modules/@vant/weapp/lib/calendar/utils
+转换进度: 640 / 766   fileKey：node_modules/@vant/weapp/lib/card/index
+转换进度: 641 / 766   fileKey：node_modules/@vant/weapp/lib/cascader/index
+转换进度: 642 / 766   fileKey：node_modules/@vant/weapp/lib/cell/index
+转换进度: 643 / 766   fileKey：node_modules/@vant/weapp/lib/cell-group/index
+转换进度: 644 / 766   fileKey：node_modules/@vant/weapp/lib/checkbox/index
+转换进度: 645 / 766   fileKey：node_modules/@vant/weapp/lib/checkbox-group/index
+转换进度: 646 / 766   fileKey：node_modules/@vant/weapp/lib/circle/canvas
+转换进度: 647 / 766   fileKey：node_modules/@vant/weapp/lib/circle/index
+转换进度: 648 / 766   fileKey：node_modules/@vant/weapp/lib/col/index
+转换进度: 649 / 766   fileKey：node_modules/@vant/weapp/lib/collapse/index
+转换进度: 650 / 766   fileKey：node_modules/@vant/weapp/lib/collapse-item/animate
+转换进度: 651 / 766   fileKey：node_modules/@vant/weapp/lib/collapse-item/index
+找不到这个组件: pages/Index/user/@vant/weapp/cell/index
+转换进度: 652 / 766   fileKey：node_modules/@vant/weapp/lib/common/color
+转换进度: 653 / 766   fileKey：node_modules/@vant/weapp/lib/common/component
+转换进度: 654 / 766   fileKey：node_modules/@vant/weapp/lib/common/index
+转换进度: 655 / 766   fileKey：node_modules/@vant/weapp/lib/common/relation
+转换进度: 656 / 766   fileKey：node_modules/@vant/weapp/lib/common/style/clearfix
+转换进度: 657 / 766   fileKey：node_modules/@vant/weapp/lib/common/style/ellipsis
+转换进度: 658 / 766   fileKey：node_modules/@vant/weapp/lib/common/style/hairline
+转换进度: 659 / 766   fileKey：node_modules/@vant/weapp/lib/common/style/mixins/clearfix
+转换进度: 660 / 766   fileKey：node_modules/@vant/weapp/lib/common/style/mixins/ellipsis
+转换进度: 661 / 766   fileKey：node_modules/@vant/weapp/lib/common/style/mixins/hairline
+转换进度: 662 / 766   fileKey：node_modules/@vant/weapp/lib/common/style/var
+转换进度: 663 / 766   fileKey：node_modules/@vant/weapp/lib/common/utils
+转换进度: 664 / 766   fileKey：node_modules/@vant/weapp/lib/common/validator
+转换进度: 665 / 766   fileKey：node_modules/@vant/weapp/lib/common/version
+转换进度: 666 / 766   fileKey：node_modules/@vant/weapp/lib/config-provider/index
+转换进度: 667 / 766   fileKey：node_modules/@vant/weapp/lib/count-down/index
+转换进度: 668 / 766   fileKey：node_modules/@vant/weapp/lib/count-down/utils
+转换进度: 669 / 766   fileKey：node_modules/@vant/weapp/lib/datetime-picker/index
+转换进度: 670 / 766   fileKey：node_modules/@vant/weapp/lib/definitions/index
+转换进度: 671 / 766   fileKey：node_modules/@vant/weapp/lib/dialog/dialog
+转换进度: 672 / 766   fileKey：node_modules/@vant/weapp/lib/dialog/index
+找不到这个组件: pages/BLE_WIFI/BLE/@vant/weapp/button/index
+找不到这个组件: pages/BLE_WIFI/BLE/@vant/weapp/button/index
+转换进度: 673 / 766   fileKey：node_modules/@vant/weapp/lib/divider/index
+转换进度: 674 / 766   fileKey：node_modules/@vant/weapp/lib/dropdown-item/index
+找不到这个组件: pages/Index/user/@vant/weapp/cell/index
+转换进度: 675 / 766   fileKey：node_modules/@vant/weapp/lib/dropdown-item/shared
+转换进度: 676 / 766   fileKey：node_modules/@vant/weapp/lib/dropdown-menu/index
+转换进度: 677 / 766   fileKey：node_modules/@vant/weapp/lib/empty/index
+转换进度: 678 / 766   fileKey：node_modules/@vant/weapp/lib/field/index
+找不到这个组件: pages/Index/user/@vant/weapp/cell/index
+转换进度: 679 / 766   fileKey：node_modules/@vant/weapp/lib/field/input
+转换进度: 680 / 766   fileKey：node_modules/@vant/weapp/lib/field/props
+转换进度: 681 / 766   fileKey：node_modules/@vant/weapp/lib/field/textarea
+转换进度: 682 / 766   fileKey：node_modules/@vant/weapp/lib/field/types
+转换进度: 683 / 766   fileKey：node_modules/@vant/weapp/lib/goods-action/index
+转换进度: 684 / 766   fileKey：node_modules/@vant/weapp/lib/goods-action-button/index
+找不到这个组件: pages/BLE_WIFI/BLE/@vant/weapp/button/index
+转换进度: 685 / 766   fileKey：node_modules/@vant/weapp/lib/goods-action-icon/index
+找不到这个组件: pages/BLE_WIFI/BLE/@vant/weapp/button/index
+转换进度: 686 / 766   fileKey：node_modules/@vant/weapp/lib/grid/index
+转换进度: 687 / 766   fileKey：node_modules/@vant/weapp/lib/grid-item/index
+转换进度: 688 / 766   fileKey：node_modules/@vant/weapp/lib/icon/index
+转换进度: 689 / 766   fileKey：node_modules/@vant/weapp/lib/image/index
+转换进度: 690 / 766   fileKey：node_modules/@vant/weapp/lib/index-anchor/index
+转换进度: 691 / 766   fileKey：node_modules/@vant/weapp/lib/index-bar/index
+转换进度: 692 / 766   fileKey：node_modules/@vant/weapp/lib/info/index
+转换进度: 693 / 766   fileKey：node_modules/@vant/weapp/lib/loading/index
+转换进度: 694 / 766   fileKey：node_modules/@vant/weapp/lib/mixins/basic
+转换进度: 695 / 766   fileKey：node_modules/@vant/weapp/lib/mixins/button
+转换进度: 696 / 766   fileKey：node_modules/@vant/weapp/lib/mixins/link
+转换进度: 697 / 766   fileKey：node_modules/@vant/weapp/lib/mixins/page-scroll
+转换进度: 698 / 766   fileKey：node_modules/@vant/weapp/lib/mixins/touch
+转换进度: 699 / 766   fileKey：node_modules/@vant/weapp/lib/mixins/transition
+转换进度: 700 / 766   fileKey：node_modules/@vant/weapp/lib/nav-bar/index
+转换进度: 701 / 766   fileKey：node_modules/@vant/weapp/lib/notice-bar/index
+转换进度: 702 / 766   fileKey：node_modules/@vant/weapp/lib/notify/index
+转换进度: 703 / 766   fileKey：node_modules/@vant/weapp/lib/notify/notify
+转换进度: 704 / 766   fileKey：node_modules/@vant/weapp/lib/overlay/index
+转换进度: 705 / 766   fileKey：node_modules/@vant/weapp/lib/panel/index
+找不到这个组件: pages/Index/user/@vant/weapp/cell/index
+转换进度: 706 / 766   fileKey：node_modules/@vant/weapp/lib/picker/index
+转换进度: 707 / 766   fileKey：node_modules/@vant/weapp/lib/picker/shared
+转换进度: 708 / 766   fileKey：node_modules/@vant/weapp/lib/picker/toolbar
+转换进度: 709 / 766   fileKey：node_modules/@vant/weapp/lib/picker-column/index
+转换进度: 710 / 766   fileKey：node_modules/@vant/weapp/lib/popup/index
+转换进度: 711 / 766   fileKey：node_modules/@vant/weapp/lib/progress/index
+转换进度: 712 / 766   fileKey：node_modules/@vant/weapp/lib/radio/index
+转换进度: 713 / 766   fileKey：node_modules/@vant/weapp/lib/radio-group/index
+转换进度: 714 / 766   fileKey：node_modules/@vant/weapp/lib/rate/index
+转换进度: 715 / 766   fileKey：node_modules/@vant/weapp/lib/row/index
+转换进度: 716 / 766   fileKey：node_modules/@vant/weapp/lib/search/index
+转换进度: 717 / 766   fileKey：node_modules/@vant/weapp/lib/share-sheet/index
+转换进度: 718 / 766   fileKey：node_modules/@vant/weapp/lib/share-sheet/options
+转换进度: 719 / 766   fileKey：node_modules/@vant/weapp/lib/sidebar/index
+转换进度: 720 / 766   fileKey：node_modules/@vant/weapp/lib/sidebar-item/index
+转换进度: 721 / 766   fileKey：node_modules/@vant/weapp/lib/skeleton/index
+转换进度: 722 / 766   fileKey：node_modules/@vant/weapp/lib/slider/index
+转换进度: 723 / 766   fileKey：node_modules/@vant/weapp/lib/stepper/index
+转换进度: 724 / 766   fileKey：node_modules/@vant/weapp/lib/steps/index
+转换进度: 725 / 766   fileKey：node_modules/@vant/weapp/lib/sticky/index
+转换进度: 726 / 766   fileKey：node_modules/@vant/weapp/lib/submit-bar/index
+找不到这个组件: pages/BLE_WIFI/BLE/@vant/weapp/button/index
+转换进度: 727 / 766   fileKey：node_modules/@vant/weapp/lib/swipe-cell/index
+转换进度: 728 / 766   fileKey：node_modules/@vant/weapp/lib/switch/index
+转换进度: 729 / 766   fileKey：node_modules/@vant/weapp/lib/tab/index
+转换进度: 730 / 766   fileKey：node_modules/@vant/weapp/lib/tabbar/index
+转换进度: 731 / 766   fileKey：node_modules/@vant/weapp/lib/tabbar-item/index
+转换进度: 732 / 766   fileKey：node_modules/@vant/weapp/lib/tabs/index
+转换进度: 733 / 766   fileKey：node_modules/@vant/weapp/lib/tag/index
+转换进度: 734 / 766   fileKey：node_modules/@vant/weapp/lib/toast/index
+转换进度: 735 / 766   fileKey：node_modules/@vant/weapp/lib/toast/toast
+转换进度: 736 / 766   fileKey：node_modules/@vant/weapp/lib/transition/index
+转换进度: 737 / 766   fileKey：node_modules/@vant/weapp/lib/tree-select/index
+转换进度: 738 / 766   fileKey：node_modules/@vant/weapp/lib/uploader/index
+转换进度: 739 / 766   fileKey：node_modules/@vant/weapp/lib/uploader/shared
+转换进度: 740 / 766   fileKey：node_modules/@vant/weapp/lib/uploader/utils
+转换进度: 741 / 766   fileKey：node_modules/@vant/weapp/lib/wxs/add-unit
+转换进度: 742 / 766   fileKey：node_modules/@vant/weapp/lib/wxs/array
+转换进度: 743 / 766   fileKey：node_modules/@vant/weapp/lib/wxs/bem
+转换进度: 744 / 766   fileKey：node_modules/@vant/weapp/lib/wxs/memoize
+转换进度: 745 / 766   fileKey：node_modules/@vant/weapp/lib/wxs/object
+转换进度: 746 / 766   fileKey：node_modules/@vant/weapp/lib/wxs/style
+转换进度: 747 / 766   fileKey：node_modules/@vant/weapp/lib/wxs/utils
+转换进度: 748 / 766   fileKey：node_modules/@vant/weapp/package
+转换进度: 749 / 766   fileKey：package-lock
+转换进度: 750 / 766   fileKey：package
+转换进度: 751 / 766   fileKey：pages/BLE_WIFI/BLE/BLE
+找不到这个组件: pages/BLE_WIFI/BLE/@vant/weapp/button/index
+转换进度: 752 / 766   fileKey：pages/BLE_WIFI/BLUFI/blueConnect/blueConnect
+转换进度: 753 / 766   fileKey：pages/BLE_WIFI/BLUFI/blueDevices/blueDevices
+转换进度: 754 / 766   fileKey：pages/BLE_WIFI/BLUFI/blueWifi/blueWifi
+转换进度: 755 / 766   fileKey：pages/Control/device/device
+转换进度: 756 / 766   fileKey：pages/Control/pidControl/pidControl
+转换进度: 757 / 766   fileKey：pages/Index/data/data
+找不到这个组件: pages/Index/data/@vant/weapp/circle/index
+转换进度: 758 / 766   fileKey：pages/Index/home/home
+转换进度: 759 / 766   fileKey：pages/Index/user/user
+找不到这个组件: pages/Index/user/@vant/weapp/cell/index
+找不到这个组件: pages/Index/user/@vant/weapp/cell/index
+找不到这个组件: pages/Index/user/@vant/weapp/cell/index
+转换进度: 760 / 766   fileKey：project.config
+转换进度: 761 / 766   fileKey：project.private.config
+转换进度: 762 / 766   fileKey：sitemap
+转换进度: 763 / 766   fileKey：utils/BLE_util
+转换进度: 764 / 766   fileKey：utils/hex_hmac_sha1
+转换进度: 765 / 766   fileKey：utils/util
+转换进度: 766 / 766   fileKey：weui
+write pages.json success!
+write manifest.json success!
+write main.js success!
+write package.json success!
+
+
+统计信息：
+
+Component数量: 7
+Page数量: 6
+支付api数量: 0
+登录api数量: 0
+chooseMedia数量: 3
+getLocation数量: 0
+getRelationNodes数量: 0
+<ad/>数量: 0
+<map/>数量: 0
+<video/>数量: 3
+Vant组件: van-button、van-circle、van-cell， 数量：3
+
+项目转换完成！
+用时: 65.269s
+工具版本：v2.2.6
+在该小程序项目的同级目录可以看到_uni结尾的项目，即是转换好的uniapp项目，相关日志在该目录里。
+
+！！！ 当前项目引用了npm模块，请转换完后，在命令行里运行“npm install”命令安装npm模块 ！！！
+
+使用说明：
+    1.因各种原因，本工具并非100%完美转换！部分语法仍需人工处理！
+    2.工具转换原理及说明文档参考：https://l4rz4zwpx7.k.topthink.com/@kmrvzg72lx/
+    3.如遇运行报错，请添加QQ群(五群：536178289)带图反馈或https://github.com/zhangdaren/miniprogram-to-uniapp提交Issue！
+    4.转换后请查阅_uni目录或_uni-cli目录里的 README.md 和 transform.log
+
+
