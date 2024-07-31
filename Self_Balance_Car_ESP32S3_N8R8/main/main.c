@@ -15,9 +15,17 @@
 #include "Data_handle.h"
 #include "wifi.h"
 #include "main.h"
+#include "esp_https_ota.h"
+#include "esp_ota_ops.h"
+
 //***Parameters***
 //Tags
 #define main_tag "main"
+#define TAG "OTA"
+
+// WiFi retry times
+#define WIFI_CONNECT_RETRY_MAX 5
+
 //UART pin assign
 #define TXD_PIN (GPIO_NUM_17)
 #define RXD_PIN (GPIO_NUM_18)
@@ -26,6 +34,8 @@
 QueueHandle_t msg_queue = NULL;
 
 //Data type
+extern const uint8_t server_cert_pem_start[] asm("_binary_ca_cert_pem_start");
+extern const uint8_t server_cert_pem_end[] asm("_binary_ca_cert_pem_end");
 
 //***Functions***
 
@@ -52,37 +62,89 @@ void queue_init(){
     }
 }
 
-//Main function
+// 检查WiFi连接状态
+static bool is_wifi_connected(void)
+{
+    wifi_ap_record_t ap_info;
+    if (esp_wifi_sta_get_ap_info(&ap_info) == ESP_OK)
+    {
+        return true;
+    }
+    return false;
+}
+
+// 进行OTA升级
+esp_err_t perform_ota_update(void)
+{
+    esp_http_client_config_t config = {
+        .url = CONFIG_FIRMWARE_UPGRADE_URL,
+        .cert_pem = (char *)server_cert_pem_start,
+        .timeout_ms = CONFIG_OTA_RECV_TIMEOUT,
+        .keep_alive_enable = true,
+    };
+    esp_https_ota_config_t ota_config = {
+        .http_config = &config,
+    };
+    esp_err_t ret = esp_https_ota(&ota_config);
+    if (ret == ESP_OK) {
+        esp_restart();
+    } else {
+        return ESP_FAIL;
+    }
+    return ESP_OK;
+}
+
+// Main function
 void app_main(void)
 {
     // Initialize NVS
     esp_err_t ret;
     ret = nvs_flash_init();
-    if (ret == ESP_ERR_NVS_NO_FREE_PAGES || ret == ESP_ERR_NVS_NEW_VERSION_FOUND) {
+    if (ret == ESP_ERR_NVS_NO_FREE_PAGES || ret == ESP_ERR_NVS_NEW_VERSION_FOUND)
+    {
         ESP_ERROR_CHECK(nvs_flash_erase());
         ret = nvs_flash_init();
     }
-    ESP_ERROR_CHECK( ret );
+    ESP_ERROR_CHECK(ret);
+
+    // Initialize Bluetooth
+    ble_init();
+
+    // Initialize UART
+    init_uart();
+
+    // Queue init
+    queue_init();
+
+    // Task init
+    xTaskCreate(send_msg_to_stm32, "send_msg_to_stm32", 4096 * 5, NULL, 5, NULL);
 
     // Initialize WIFI
     initialise_wifi();
 
-    // Start getting time and weather
-    // weather_time_task_init();
+    // Check WiFi connection
+    int retry_count = 0;
+    while (!is_wifi_connected() && retry_count < WIFI_CONNECT_RETRY_MAX) {
+        ESP_LOGI(TAG, "WiFi not connected, waiting...");
+        vTaskDelay(2000 / portTICK_PERIOD_MS); // Wait for 2 seconds before retrying
+        retry_count++;
+    }
     
-    //Initialize Blutooth
-    ble_init();
-
-    // Intialize UART
-    init_uart();
-
-    //Queue init
-    queue_init();
-
-    //Task init
-    xTaskCreate(send_msg_to_stm32, "send_msg_to_stm32", 4096*5, NULL, 5, NULL);
-
-
+    if (retry_count >= WIFI_CONNECT_RETRY_MAX) {
+        ESP_LOGE(TAG, "Failed to connect to WiFi after maximum retries");
+    }
+    
+    // Perform OTA Update
+    if(is_wifi_connected()){
+        ESP_LOGI(TAG, "WiFi connected, starting OTA update");
+        ret = perform_ota_update();
+        if (ret != ESP_OK) {
+            ESP_LOGE(TAG, "OTA update failed");
+        }
+    }
+    else{
+        ESP_LOGE(TAG, "WiFi not connected, cannot perform OTA update");
+    }
 }
 
 // main.c

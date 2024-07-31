@@ -1,0 +1,14 @@
+menu "Project Configuration"
+
+    config FIRMWARE_UPGRADE_URL
+        string "Firmware Upgrade URL"
+        default "https://10.0.0.5:8070/hello_world.bin"
+        help
+            URL of server which hosts the firmware image.
+
+    config OTA_RECV_TIMEOUT
+        int "OTA Receive Timeout"
+        default 5000
+        help
+            Maximum time for reception
+endmenu
