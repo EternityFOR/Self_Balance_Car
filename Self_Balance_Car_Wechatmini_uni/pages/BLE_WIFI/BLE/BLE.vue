@@ -293,9 +293,15 @@ export default {
                         success(res) {
                             console.log(res);
                             uni.startBluetoothDevicesDiscovery({
-                                success: function (res) {
-                                    uni.redirectTo({ url: '/pages/BLE_WIFI/BLUFI/bluDevices' });
-                                }
+                                success(res) {
+									console.log(res);
+                                    setTimeout(() => {
+                                    	uni.redirectTo({ url: '/pages/BLE_WIFI/BLUFI/blueDevices/blueDevices' });
+                                    },2000)
+                                },
+								fail(res) {
+									console.log(res);
+								}
                             });
                         },
                         fail(res) {
