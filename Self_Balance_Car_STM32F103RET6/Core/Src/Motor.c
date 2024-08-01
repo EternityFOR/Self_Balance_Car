@@ -35,7 +35,7 @@ float targetSpeed;
 int carLifted = 0;
 unsigned flag = 1;
 float turn_error = 0.0, prev_turn_error = 0.0, turn_output = 0.0;
-float balanceshift = -1.5f;
+float balanceshift = 6.3f;
 
 void Velocity_PID_Control(MotorControl *motor_R, MotorControl *motor_L) {
     MotorControl* motors[] = {motor_R, motor_L};

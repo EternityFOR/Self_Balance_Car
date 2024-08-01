@@ -102,6 +102,7 @@ void ReadPIDParamsFromFlash(float *Balance_Kp, float *Balance_Ki, float *Balance
 #define M1_EN1_GPIO_Port GPIOB
 #define M1_EN2_Pin GPIO_PIN_7
 #define M1_EN2_GPIO_Port GPIOB
+
 /* USER CODE BEGIN Private defines */
 void UART_IRQHandler_IDLE(UART_HandleTypeDef *huart);
 /* USER CODE END Private defines */

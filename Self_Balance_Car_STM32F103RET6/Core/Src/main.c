@@ -32,6 +32,8 @@
 #include "Motor.h"
 //Encoder
 #include "Encoder.h"
+//Engine Sound
+#include "Engine_Dat.h"
 
 /* USER CODE END Includes */
 
@@ -50,7 +52,9 @@
 /* USER CODE END PM */
 
 /* Private variables ---------------------------------------------------------*/
- DAC_HandleTypeDef hdac;
+DAC_HandleTypeDef hdac;
+DMA_HandleTypeDef hdma_dac_ch1;
+DMA_HandleTypeDef hdma_dac_ch2;
 
 I2C_HandleTypeDef hi2c1;
 I2C_HandleTypeDef hi2c2;
@@ -62,6 +66,7 @@ TIM_HandleTypeDef htim2;
 TIM_HandleTypeDef htim3;
 TIM_HandleTypeDef htim4;
 TIM_HandleTypeDef htim5;
+TIM_HandleTypeDef htim7;
 TIM_HandleTypeDef htim8;
 
 UART_HandleTypeDef huart2;
@@ -74,6 +79,13 @@ const osThreadAttr_t msg_rx_t_attributes = {
   .name = "msg_rx_t",
   .stack_size = 512 * 4,
   .priority = (osPriority_t) osPriorityNormal,
+};
+/* Definitions for Engine_Sound_t */
+osThreadId_t Engine_Sound_tHandle;
+const osThreadAttr_t Engine_Sound_t_attributes = {
+  .name = "Engine_Sound_t",
+  .stack_size = 512 * 4,
+  .priority = (osPriority_t) osPriorityBelowNormal,
 };
 /* Definitions for Motor_update_t */
 osThreadId_t Motor_update_tHandle;
@@ -88,8 +100,11 @@ const osMessageQueueAttr_t msg_rx_q_attributes = {
   .name = "msg_rx_q"
 };
 /* USER CODE BEGIN PV */
+//Engine data
+#define		BUFFER_SIZE		(1024)
+uint8_t Buffer0[BUFFER_SIZE] = {0};
 //Car_ctr&setup_data
-#define FLASH_PID_PARAMS_ADDRESS 0x0800ff00
+#define FLASH_PID_PARAMS_ADDRESS 0x08070000
 #define RX_BUFFER_SIZE_1 150
 uint8_t rxBuffer_1[RX_BUFFER_SIZE_1];
 uint8_t rxIndex_1 = 0;
@@ -139,19 +154,21 @@ uint8_t ctr_cmd;
 /* Private function prototypes -----------------------------------------------*/
 void SystemClock_Config(void);
 static void MX_GPIO_Init(void);
+static void MX_DMA_Init(void);
 static void MX_TIM1_Init(void);
 static void MX_TIM2_Init(void);
 static void MX_TIM3_Init(void);
 static void MX_TIM4_Init(void);
 static void MX_TIM8_Init(void);
 static void MX_I2C2_Init(void);
-static void MX_DMA_Init(void);
 static void MX_TIM5_Init(void);
 static void MX_USART2_UART_Init(void);
 static void MX_DAC_Init(void);
 static void MX_I2C1_Init(void);
 static void MX_SPI2_Init(void);
+static void MX_TIM7_Init(void);
 void msg_rx(void *argument);
+void Engine_Sound(void *argument);
 void Motor_update(void *argument);
 
 /* USER CODE BEGIN PFP */
@@ -201,6 +218,7 @@ int is_nan(float value) {
     converter.f = value;
     return (converter.u & 0x7fffffff) > 0x7f800000;
 }
+
 /* USER CODE END 0 */
 
 /**
@@ -209,6 +227,7 @@ int is_nan(float value) {
   */
 int main(void)
 {
+
   /* USER CODE BEGIN 1 */
   /* USER CODE END 1 */
 
@@ -230,18 +249,19 @@ int main(void)
 
   /* Initialize all configured peripherals */
   MX_GPIO_Init();
+  MX_DMA_Init();
   MX_TIM1_Init();
   MX_TIM2_Init();
   MX_TIM3_Init();
   MX_TIM4_Init();
   MX_TIM8_Init();
   MX_I2C2_Init();
-  MX_DMA_Init();
   MX_TIM5_Init();
   MX_USART2_UART_Init();
   MX_DAC_Init();
   MX_I2C1_Init();
   MX_SPI2_Init();
+  MX_TIM7_Init();
   /* USER CODE BEGIN 2 */
   BSP_MPU6050_Init();
   Timer_Start();
@@ -250,7 +270,6 @@ int main(void)
 // ***** CN2 CN4 *****
   initMotorControl(&motor_R, TIM_CHANNEL_1, TIM_CHANNEL_2, GetEncoder_Counter_R);
   initMotorControl(&motor_L, TIM_CHANNEL_1, TIM_CHANNEL_2, GetEncoder_Counter_L);
-
 // ***** CN1 CN3 *****
 //  initMotorControl(&motor_R, TIM_CHANNEL_3, TIM_CHANNEL_4, GetEncoder_Counter_R);
 //  initMotorControl(&motor_L, TIM_CHANNEL_3, TIM_CHANNEL_4, GetEncoder_Counter_L);
@@ -283,6 +302,9 @@ int main(void)
   /* creation of msg_rx_t */
   msg_rx_tHandle = osThreadNew(msg_rx, NULL, &msg_rx_t_attributes);
 
+  /* creation of Engine_Sound_t */
+  Engine_Sound_tHandle = osThreadNew(Engine_Sound, NULL, &Engine_Sound_t_attributes);
+
   /* creation of Motor_update_t */
   Motor_update_tHandle = osThreadNew(Motor_update, NULL, &Motor_update_t_attributes);
 
@@ -298,6 +320,7 @@ int main(void)
   osKernelStart();
 
   /* We should never get here as control is now taken by the scheduler */
+
   /* Infinite loop */
   /* USER CODE BEGIN WHILE */
 
@@ -377,8 +400,8 @@ static void MX_DAC_Init(void)
 
   /** DAC channel OUT1 config
   */
-  sConfig.DAC_Trigger = DAC_TRIGGER_NONE;
-  sConfig.DAC_OutputBuffer = DAC_OUTPUTBUFFER_ENABLE;
+  sConfig.DAC_Trigger = DAC_TRIGGER_T7_TRGO;
+  sConfig.DAC_OutputBuffer = DAC_OUTPUTBUFFER_DISABLE;
   if (HAL_DAC_ConfigChannel(&hdac, &sConfig, DAC_CHANNEL_1) != HAL_OK)
   {
     Error_Handler();
@@ -785,6 +808,44 @@ static void MX_TIM5_Init(void)
 }
 
 /**
+  * @brief TIM7 Initialization Function
+  * @param None
+  * @retval None
+  */
+static void MX_TIM7_Init(void)
+{
+
+  /* USER CODE BEGIN TIM7_Init 0 */
+
+  /* USER CODE END TIM7_Init 0 */
+
+  TIM_MasterConfigTypeDef sMasterConfig = {0};
+
+  /* USER CODE BEGIN TIM7_Init 1 */
+
+  /* USER CODE END TIM7_Init 1 */
+  htim7.Instance = TIM7;
+  htim7.Init.Prescaler = 36-1;
+  htim7.Init.CounterMode = TIM_COUNTERMODE_UP;
+  htim7.Init.Period = 125;
+  htim7.Init.AutoReloadPreload = TIM_AUTORELOAD_PRELOAD_DISABLE;
+  if (HAL_TIM_Base_Init(&htim7) != HAL_OK)
+  {
+    Error_Handler();
+  }
+  sMasterConfig.MasterOutputTrigger = TIM_TRGO_UPDATE;
+  sMasterConfig.MasterSlaveMode = TIM_MASTERSLAVEMODE_DISABLE;
+  if (HAL_TIMEx_MasterConfigSynchronization(&htim7, &sMasterConfig) != HAL_OK)
+  {
+    Error_Handler();
+  }
+  /* USER CODE BEGIN TIM7_Init 2 */
+
+  /* USER CODE END TIM7_Init 2 */
+
+}
+
+/**
   * @brief TIM8 Initialization Function
   * @param None
   * @retval None
@@ -913,6 +974,7 @@ static void MX_DMA_Init(void)
 
   /* DMA controller clock enable */
   __HAL_RCC_DMA1_CLK_ENABLE();
+  __HAL_RCC_DMA2_CLK_ENABLE();
 
   /* DMA interrupt init */
   /* DMA1_Channel6_IRQn interrupt configuration */
@@ -921,6 +983,12 @@ static void MX_DMA_Init(void)
   /* DMA1_Channel7_IRQn interrupt configuration */
   HAL_NVIC_SetPriority(DMA1_Channel7_IRQn, 5, 0);
   HAL_NVIC_EnableIRQ(DMA1_Channel7_IRQn);
+  /* DMA2_Channel3_IRQn interrupt configuration */
+  HAL_NVIC_SetPriority(DMA2_Channel3_IRQn, 5, 0);
+  HAL_NVIC_EnableIRQ(DMA2_Channel3_IRQn);
+  /* DMA2_Channel4_5_IRQn interrupt configuration */
+  HAL_NVIC_SetPriority(DMA2_Channel4_5_IRQn, 5, 0);
+  HAL_NVIC_EnableIRQ(DMA2_Channel4_5_IRQn);
 
 }
 
@@ -932,6 +1000,8 @@ static void MX_DMA_Init(void)
 static void MX_GPIO_Init(void)
 {
   GPIO_InitTypeDef GPIO_InitStruct = {0};
+/* USER CODE BEGIN MX_GPIO_Init_1 */
+/* USER CODE END MX_GPIO_Init_1 */
 
   /* GPIO Ports Clock Enable */
   __HAL_RCC_GPIOD_CLK_ENABLE();
@@ -965,6 +1035,8 @@ static void MX_GPIO_Init(void)
   GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_LOW;
   HAL_GPIO_Init(Charging_Mode_GPIO_Port, &GPIO_InitStruct);
 
+/* USER CODE BEGIN MX_GPIO_Init_2 */
+/* USER CODE END MX_GPIO_Init_2 */
 }
 
 /* USER CODE BEGIN 4 */
@@ -1066,8 +1138,8 @@ void msg_rx(void *argument)
 				if (strcmp(type, "Control") == 0) {
 					if (sscanf((char*)ctr.msg_Data, "{\"Type\":\"Control\",\"L\":%d,\"R\":%d,\"A\":%d}",
 							   &ctr.L, &ctr.R, &ctr.A) == 3) {
-						motor_R.targetSpeed = ctr.R;
-						motor_L.targetSpeed = ctr.L;
+						motor_R.targetSpeed = ctr.L;
+						motor_L.targetSpeed = ctr.R;
 						ctr_cmd = ctr.A;
 						ctr.type = DataType_Control;
 					}
@@ -1119,6 +1191,51 @@ void msg_rx(void *argument)
   /* USER CODE END 5 */
 }
 
+/* USER CODE BEGIN Header_Engine_Sound */
+/**
+* @brief Function implementing the Engine_Sound_t thread.
+* @param argument: Not used
+* @retval None
+*/
+/* USER CODE END Header_Engine_Sound */
+void Engine_Sound(void *argument)
+{
+  /* USER CODE BEGIN Engine_Sound */
+	uint32_t DataLength = 0;
+	uint8_t* DataAddress = NULL;
+
+	DataLength = sizeof(data) - 0x2c;
+	DataAddress = (unsigned char *)(data + 0x2c);
+	memset(Buffer0, 0, BUFFER_SIZE);
+	HAL_TIM_Base_Start(&htim7);
+
+  /* Infinite loop */
+  for(;;)
+  {
+	if(DataLength >= BUFFER_SIZE)
+	{
+		memcpy(Buffer0, DataAddress, BUFFER_SIZE);
+		DataLength -= BUFFER_SIZE;
+		DataAddress += BUFFER_SIZE;
+		HAL_DAC_Start_DMA(&hdac, DAC_CHANNEL_1, (uint32_t *)Buffer0, BUFFER_SIZE, DAC_ALIGN_8B_R);
+		while(HAL_DAC_GetState(&hdac) != HAL_DAC_STATE_READY);
+	}
+	else break;
+	osDelay(5);
+  }
+
+  HAL_TIM_Base_Stop(&htim7);
+
+  HAL_DAC_Stop_DMA(&hdac, DAC_CHANNEL_1);
+
+  if (DataAddress != NULL) {
+      free(DataAddress);
+      DataAddress = NULL;
+  }
+
+  /* USER CODE END Engine_Sound */
+}
+
 /* USER CODE BEGIN Header_Motor_update */
 /**
 * @brief Function implementing the Motor_update_t thread.
@@ -1131,9 +1248,9 @@ void Motor_update(void *argument)
   /* USER CODE BEGIN Motor_update */
 	  int count = 1;
 
-	  /* Infinite loop */
-	  for(;;)
-	  {
+  /* Infinite loop */
+  for(;;)
+  {
 		  read_angle(&motor_R, &motor_L);
 		  if (count % 10 == 0) {
 			Velocity_PID_Control(&motor_R, &motor_L);
@@ -1147,7 +1264,7 @@ void Motor_update(void *argument)
 
 		  osDelay(5);
 		  count = (count ) % 10 == 0 ? 1: count+1;
-	  }
+  }
   /* USER CODE END Motor_update */
 }
 
